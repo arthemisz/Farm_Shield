@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Shield outline -->
+  <path d="M50 8L15 24V48C15 68 30 86 50 92C70 86 85 68 85 48V24L50 8Z" fill="#1b4330" stroke="#36a55a" stroke-width="3"/>
+  <!-- Leaf element inside shield -->
+  <path d="M50 25C50 25 35 40 35 55C35 65 43 72 50 75C57 72 65 65 65 55C65 40 50 25 50 25Z" fill="#36a55a"/>
+  <!-- Leaf vein & satellite ray -->
+  <path d="M50 32V68" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 45L40 38" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 54L60 47" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M50 62L42 56" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <!-- Satellite Orbit / Sun Spark -->
+  <circle cx="70" cy="28" r="6" fill="#f59e0b"/>
+  <path d="M64 28A8 8 0 0 1 76 28" stroke="#fef3c7" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
