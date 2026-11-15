@@ -1,0 +1,1051 @@
+import json
+import os
+
+CROPS_CATALOG = [
+    # 1. Teff
+    {
+        "id": "teff",
+        "name": "Teff",
+        "localNames": {"am": "ጤፍ", "om": "Xaafii", "ti": "ጣፍ"},
+        "scientificName": "Eragrostis tef",
+        "family": "Poaceae",
+        "category": "Cereal",
+        "countryApplicability": ["ET", "ER", "KE"],
+        "africanRegions": ["East Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "ET",
+                "regions": ["Oromia", "Amhara", "Tigray", "SNNPR"],
+                "elevationMeters": {"min": 1600, "max": 2800},
+                "notes": "Primary staple cereal of Ethiopian highlands. Thrives at 1800–2400m on black clay Vertisols."
+            },
+            {
+                "countryCode": "ER",
+                "regions": ["Debub", "Maekel"],
+                "elevationMeters": {"min": 1600, "max": 2500},
+                "notes": "Highland plateau cereal."
+            }
+        ],
+        "growingDurationDays": {"min": 60, "max": 120},
+        "waterRequirementsMm": {"min": 250, "max": 450},
+        "suitableTemperatureCelsius": {"min": 10, "max": 27, "optimal": 20},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Depletes — Teff is a heavy nitrogen consumer. Highly advised to precede or follow with nodulating legumes.",
+        "rootCharacteristics": {
+            "type": "Fibrous",
+            "depthCm": 50,
+            "notes": "Shallow fibrous root system with exceptional waterlogging resilience on cracking clays."
+        },
+        "description": "Teff is Ethiopia and Eritrea's culturally foundational cereal grain. Gluten-free, iron-rich, and drought/waterlogging-hardy.",
+        "advantages": ["Drought resilient", "High waterlogging tolerance", "Gluten-free premium food", "Reliable staple"],
+        "challenges": ["Lodging risk", "Labor intensive", "Heavy nitrogen consumer"],
+        "soilPreference": ["Vertisols (Black clay)", "Nitisols (Red basaltic)", "Cambisols"],
+        "pHRange": {"min": 5.0, "max": 8.0},
+        "rotationCompatibility": {
+            "good": ["faba_bean", "chickpea", "cowpea"],
+            "neutral": ["wheat", "barley"],
+            "poor": ["maize"],
+            "notes": "Preceding teff with faba bean significantly elevates grain protein and soil mineral nitrogen."
+        },
+        "references": ["EIAR Teff Variety Catalog (2022)", "FAO Crop Information - Eragrostis tef", "CGIAR CIMMYT Ethiopia"],
+        "validationStatus": "reviewed"
+    },
+
+    # 2. Bread Wheat
+    {
+        "id": "wheat",
+        "name": "Bread Wheat",
+        "localNames": {"am": "ስንዴ", "om": "Qamadii", "ti": "ስርናይ", "sw": "Ngano", "ar": "قمح"},
+        "scientificName": "Triticum aestivum",
+        "family": "Poaceae",
+        "category": "Cereal",
+        "countryApplicability": ["ET", "KE", "TZ", "UG", "RW", "ZA", "EG", "MA", "DZ", "TN", "SD", "ZW", "ZM"],
+        "africanRegions": ["North Africa", "East Africa", "Southern Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "ET",
+                "regions": ["Oromia", "Amhara", "SNNPR"],
+                "elevationMeters": {"min": 1500, "max": 3000},
+                "notes": "Highland wheat belt: Arsi, Bale, and West Shewa zones."
+            },
+            {
+                "countryCode": "KE",
+                "regions": ["Nakuru", "Narok", "Uasin Gishu", "Meru"],
+                "elevationMeters": {"min": 1800, "max": 2800},
+                "notes": "Rift Valley highland breadbasket."
+            },
+            {
+                "countryCode": "EG",
+                "regions": ["Nile Delta", "Upper Egypt"],
+                "elevationMeters": {"min": 0, "max": 200},
+                "notes": "Irrigated winter wheat along the Nile Valley."
+            },
+            {
+                "countryCode": "ZA",
+                "regions": ["Western Cape", "Free State"],
+                "elevationMeters": {"min": 100, "max": 1600},
+                "notes": "Winter rainfall in Western Cape; dryland/irrigated in Free State."
+            }
+        ],
+        "growingDurationDays": {"min": 90, "max": 150},
+        "waterRequirementsMm": {"min": 350, "max": 650},
+        "suitableTemperatureCelsius": {"min": 10, "max": 25, "optimal": 18},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Depletes soil nitrogen reserves. Requires crop rotation with legumes or fertilizer replenishment.",
+        "rootCharacteristics": {
+            "type": "Fibrous",
+            "depthCm": 100,
+            "notes": "Deeper than teff, moderate root density aiding subsoil porosity."
+        },
+        "description": "Essential caloric and commercial cereal across African temperate highlands and Mediterranean/irrigated basins.",
+        "advantages": ["High commercial yield", "Global market value", "Cold-hardy in highlands"],
+        "challenges": ["Stem rust (Ug99) susceptibility", "Heat stress sensitivity during anthesis", "High fertilizer need"],
+        "soilPreference": ["Vertisols", "Nitisols", "Cambisols", "Luvisols"],
+        "pHRange": {"min": 5.5, "max": 7.5},
+        "rotationCompatibility": {
+            "good": ["faba_bean", "soybean", "common_bean", "chickpea"],
+            "neutral": ["maize", "teff"],
+            "poor": ["barley"],
+            "notes": "Legume break crops break Fusarium and rust spores and restore organic nitrogen."
+        },
+        "references": ["CIMMYT Global Wheat Program", "EIAR National Wheat Program", "ARC South Africa Small Grains"],
+        "validationStatus": "reviewed"
+    },
+
+    # 3. Maize
+    {
+        "id": "maize",
+        "name": "Maize",
+        "localNames": {"am": "ቦሎቄ", "om": "Boqqolloo", "sw": "Mahindi", "ha": "Masara", "yo": "Agbado", "ig": "Ọka"},
+        "scientificName": "Zea mays",
+        "family": "Poaceae",
+        "category": "Cereal",
+        "countryApplicability": ["ET", "KE", "TZ", "UG", "RW", "NG", "GH", "CI", "ZA", "ZM", "ZW", "MW", "MZ", "AO", "CM", "BJ", "BF", "TG"],
+        "africanRegions": ["East Africa", "West Africa", "Central Africa", "Southern Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "NG",
+                "regions": ["Kaduna", "Niger", "Kano", "Oyo"],
+                "elevationMeters": {"min": 100, "max": 1200},
+                "notes": "Major staple across Guinea and Sudan savannas."
+            },
+            {
+                "countryCode": "KE",
+                "regions": ["Trans Nzoia", "Uasin Gishu", "Kakamega"],
+                "elevationMeters": {"min": 1200, "max": 2200},
+                "notes": "National staple grain in Western and Rift Valley grain belts."
+            },
+            {
+                "countryCode": "ZA",
+                "regions": ["Free State", "Mpumalanga", "North West"],
+                "elevationMeters": {"min": 1000, "max": 1800},
+                "notes": "Commercial maize triangle of Southern Africa."
+            }
+        ],
+        "growingDurationDays": {"min": 90, "max": 160},
+        "waterRequirementsMm": {"min": 450, "max": 800},
+        "suitableTemperatureCelsius": {"min": 18, "max": 33, "optimal": 25},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "High nitrogen depletion. Rapidly exhausts soil N if cropped continuously.",
+        "rootCharacteristics": {
+            "type": "Fibrous and prop roots",
+            "depthCm": 120,
+            "notes": "Deep extensive rooting profile capable of extracting subsoil moisture."
+        },
+        "description": "The most widely consumed staple cereal in sub-Saharan Africa, vital for household food security and livestock feed.",
+        "advantages": ["Highest potential caloric yield", "Versatile human & animal feed", "Wide agroecological adaptability"],
+        "challenges": ["Fall Armyworm vulnerability", "Drought sensitivity at silking", "High nitrogen requirement"],
+        "soilPreference": ["Nitisols", "Cambisols", "Ferralsols", "Luvisols"],
+        "pHRange": {"min": 5.5, "max": 7.5},
+        "rotationCompatibility": {
+            "good": ["cowpea", "soybean", "groundnut", "faba_bean", "common_bean"],
+            "neutral": ["wheat", "teff", "rice"],
+            "poor": ["sorghum"],
+            "notes": "Rotating with grain legumes (cowpea, soybean) contributes up to 40-60 kg/ha nitrogen equivalent."
+        },
+        "references": ["IITA Maize Improvement Program", "CIMMYT Africa", "FAO Africa Maize Guide"],
+        "validationStatus": "reviewed"
+    },
+
+    # 4. Faba Bean
+    {
+        "id": "faba_bean",
+        "name": "Faba Bean",
+        "localNames": {"am": "ባቄላ", "om": "Baaqelaa", "ti": "ባቐላ", "ar": "فول مدمس"},
+        "scientificName": "Vicia faba",
+        "family": "Fabaceae",
+        "category": "Legume",
+        "countryApplicability": ["ET", "ER", "EG", "MA", "DZ", "TN", "SD"],
+        "africanRegions": ["North Africa", "East Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "ET",
+                "regions": ["Oromia", "Amhara", "Tigray"],
+                "elevationMeters": {"min": 1800, "max": 3000},
+                "notes": "Cool highland agroecology; cornerstone of cereal crop rotation."
+            },
+            {
+                "countryCode": "EG",
+                "regions": ["Nile Delta", "Middle Egypt"],
+                "elevationMeters": {"min": 0, "max": 200},
+                "notes": "Winter broad bean crop; staple for Ful Medames."
+            }
+        ],
+        "growingDurationDays": {"min": 90, "max": 150},
+        "waterRequirementsMm": {"min": 350, "max": 550},
+        "suitableTemperatureCelsius": {"min": 10, "max": 24, "optimal": 18},
+        "nitrogenFixation": True,
+        "nitrogenFixationKgPerHa": {"min": 60, "max": 200, "typical": 110},
+        "nitrogenEffect": "Highly enriching — Fixes atmospheric nitrogen symbiosis via Rhizobium leguminosarum, leaving substantial residual N.",
+        "rootCharacteristics": {
+            "type": "Taproot with nodules",
+            "depthCm": 90,
+            "notes": "Stout taproot bearing profuse nodule clusters that improve soil porosity and biological health."
+        },
+        "description": "Crucial high-protein cool-season pulse in East and North Africa. Superb biological nitrogen contributor for cereal cycles.",
+        "advantages": ["Fixes up to 200 kg N/ha", "Breaks cereal disease cycles", "High dietary protein (25-30%)", "Improves soil tilth"],
+        "challenges": ["Chocolate spot (Botrytis fabae) disease", "Sensitive to terminal heat and water deficit during flowering"],
+        "soilPreference": ["Vertisols", "Nitisols", "Cambisols"],
+        "pHRange": {"min": 6.0, "max": 8.0},
+        "rotationCompatibility": {
+            "good": ["wheat", "teff", "barley", "maize"],
+            "neutral": ["sorghum"],
+            "poor": ["other_legumes"],
+            "notes": "Ideal predecessor for bread wheat and teff; eliminates root-rot carryover."
+        },
+        "references": ["ICARDA Legumes Program", "EIAR Highland Pulses Research", "FAO Pulses Database"],
+        "validationStatus": "reviewed"
+    },
+
+    # 5. Sorghum
+    {
+        "id": "sorghum",
+        "name": "Sorghum",
+        "localNames": {"am": "ማሽላ", "om": "Mishinga", "ha": "Dawa", "sw": "Mtama", "yo": "Oka baba"},
+        "scientificName": "Sorghum bicolor",
+        "family": "Poaceae",
+        "category": "Cereal",
+        "countryApplicability": ["SD", "NG", "BF", "ML", "NE", "ET", "TD", "SN", "KE", "TZ", "UG", "ZW", "BW", "ZA", "SO", "SS"],
+        "africanRegions": ["West Africa", "East Africa", "Central Africa", "Southern Africa", "North Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "SD",
+                "regions": ["Gedaref", "Blue Nile", "Sennar"],
+                "elevationMeters": {"min": 300, "max": 1200},
+                "notes": "Major rainfed and mechanized clay plain grain crop."
+            },
+            {
+                "countryCode": "NG",
+                "regions": ["Kano", "Katsina", "Sokoto", "Bauchi"],
+                "elevationMeters": {"min": 200, "max": 800},
+                "notes": "Sudan and Sahel savannas; critical for food and beverage."
+            },
+            {
+                "countryCode": "ET",
+                "regions": ["Oromia (East Hararghe)", "Amhara (North Wollo)", "Tigray"],
+                "elevationMeters": {"min": 1000, "max": 2000},
+                "notes": "Drought-prone semi-arid lowlands and escarpments."
+            }
+        ],
+        "growingDurationDays": {"min": 90, "max": 150},
+        "waterRequirementsMm": {"min": 350, "max": 650},
+        "suitableTemperatureCelsius": {"min": 20, "max": 38, "optimal": 28},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Moderate depletion — Deep roots scavenge residual soil nutrients effectively.",
+        "rootCharacteristics": {
+            "type": "Fibrous & deep",
+            "depthCm": 150,
+            "notes": "Exceptionally deep root system with waxy cuticles and osmotic adjustment enabling survival during prolonged drought."
+        },
+        "description": "Indigenous African cereal renowned for supreme drought resilience, heat tolerance, and reliability in drylands.",
+        "advantages": ["Extreme drought and heat tolerance", "Grows on marginal poor soils", "Versatile food, feed, and brewing uses"],
+        "challenges": ["Striga weed parasitism", "Bird damage (Quelea quelea)", "Grain mold under unexpected late rains"],
+        "soilPreference": ["Vertisols", "Arenosols", "Cambisols", "Luvisols"],
+        "pHRange": {"min": 5.0, "max": 8.5},
+        "rotationCompatibility": {
+            "good": ["cowpea", "groundnut", "soybean"],
+            "neutral": ["cotton", "sunflower"],
+            "poor": ["millet", "maize"],
+            "notes": "Rotating with trap-crop cowpea triggers suicidal germination of parasitic Striga hermonthica seeds."
+        },
+        "references": ["ICRISAT Sorghum Breeding Program", "FAO Crop Guide: Sorghum bicolor", "ARC Sudan Agronomy"],
+        "validationStatus": "reviewed"
+    },
+
+    # 6. Pearl Millet
+    {
+        "id": "millet",
+        "name": "Pearl Millet",
+        "localNames": {"ha": "Gero / Maiwa", "sw": "Uwele", "fr": "Mil à chandelle", "am": "ዳጉሳ"},
+        "scientificName": "Pennisetum glaucum",
+        "family": "Poaceae",
+        "category": "Cereal",
+        "countryApplicability": ["NE", "ML", "BF", "SN", "NG", "TD", "SD", "NA", "ZW", "BW", "KE", "UG"],
+        "africanRegions": ["West Africa", "Central Africa", "East Africa", "Southern Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "NE",
+                "regions": ["Maradi", "Zinder", "Tahoua"],
+                "elevationMeters": {"min": 200, "max": 600},
+                "notes": "The primary staple of the Sahelian sandy belt."
+            },
+            {
+                "countryCode": "SN",
+                "regions": ["Kaolack", "Fatick", "Louga"],
+                "elevationMeters": {"min": 10, "max": 100},
+                "notes": "Central Groundnut Basin dryland cereal."
+            },
+            {
+                "countryCode": "NA",
+                "regions": ["Oshana", "Omusati", "Ohangwena"],
+                "elevationMeters": {"min": 1000, "max": 1200},
+                "notes": "Known locally as Mahangu; foundational food security crop."
+            }
+        ],
+        "growingDurationDays": {"min": 65, "max": 110},
+        "waterRequirementsMm": {"min": 200, "max": 450},
+        "suitableTemperatureCelsius": {"min": 22, "max": 42, "optimal": 30},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Low depletion — Adapted to extract minimal nutrients from poor sandy soils.",
+        "rootCharacteristics": {
+            "type": "Dense deep fibrous",
+            "depthCm": 140,
+            "notes": "Rapid early root elongation captures scarce moisture in loose sand."
+        },
+        "description": "The ultimate desert frontier grain, flourishing where temperatures exceed 40°C and rainfall drops below 300mm.",
+        "advantages": ["Thrives in ultra-hot arid climates", "Superior micronutrient content (iron, zinc)", "Fast maturing"],
+        "challenges": ["Head miner pest", "Downy mildew", "Lower commercial trade volume compared to maize"],
+        "soilPreference": ["Arenosols (Deep sands)", "Regosols", "Light Cambisols"],
+        "pHRange": {"min": 4.5, "max": 7.5},
+        "rotationCompatibility": {
+            "good": ["cowpea", "groundnut"],
+            "neutral": ["sorghum"],
+            "poor": ["continuous millet"],
+            "notes": "Intercropping or alternating with cowpea preserves soil fertility and breaks the cycle of Striga."
+        },
+        "references": ["ICRISAT Sahelian Center Niamey", "FAO/CGIAR Dryland Cereals", "ISRA Senegal"],
+        "validationStatus": "reviewed"
+    },
+
+    # 7. Cassava
+    {
+        "id": "cassava",
+        "name": "Cassava",
+        "localNames": {"sw": "Muhogo", "ha": "Rogo", "yo": "Gbaguda / Ege", "ig": "Akpu", "fr": "Manioc", "pt": "Mandioca"},
+        "scientificName": "Manihot esculenta",
+        "family": "Euphorbiaceae",
+        "category": "Root",
+        "countryApplicability": ["NG", "CD", "GH", "CI", "AO", "MZ", "TZ", "UG", "CM", "BJ", "SL", "LR", "MW", "RW", "BI"],
+        "africanRegions": ["West Africa", "Central Africa", "East Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "NG",
+                "regions": ["Ogun", "Oyo", "Benue", "Imo", "Cross River"],
+                "elevationMeters": {"min": 0, "max": 800},
+                "notes": "World's largest producer; grown extensively for garri, fufu, and industrial starch."
+            },
+            {
+                "countryCode": "CD",
+                "regions": ["Kwilu", "Kasaï", "Kongo Central"],
+                "elevationMeters": {"min": 200, "max": 1000},
+                "notes": "National dietary backbone; roots and leaves consumed."
+            },
+            {
+                "countryCode": "TZ",
+                "regions": ["Mwanza", "Mara", "Lindi", "Mtwara"],
+                "elevationMeters": {"min": 0, "max": 1200},
+                "notes": "Lake Victoria basin and coastal plains food reserve."
+            }
+        ],
+        "growingDurationDays": {"min": 240, "max": 360},
+        "waterRequirementsMm": {"min": 500, "max": 1200},
+        "suitableTemperatureCelsius": {"min": 20, "max": 35, "optimal": 27},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Heavy potassium and phosphorus feeder; moderate nitrogen uptake over full year cycle.",
+        "rootCharacteristics": {
+            "type": "Tuberous storage roots",
+            "depthCm": 80,
+            "notes": "Stores starch in thickened fibrous roots; dormant in drought and resumes vegetative growth upon rainfall."
+        },
+        "description": "Africa's supreme famine-security crop. Produces reliable caloric yields in degraded soils with erratic rain.",
+        "advantages": ["In-ground storage for months until needed", "High drought tolerance via shedding leaves", "Tolerates acidic low-fertility soils"],
+        "challenges": ["Cassava Mosaic Disease (CMD)", "Cassava Brown Streak Disease (CBSD)", "Post-harvest physiological deterioration (48h)"],
+        "soilPreference": ["Ferralsols", "Acrisols", "Arenosols"],
+        "pHRange": {"min": 4.5, "max": 7.0},
+        "rotationCompatibility": {
+            "good": ["cowpea", "groundnut", "soybean"],
+            "neutral": ["maize", "yam"],
+            "poor": ["continuous cassava"],
+            "notes": "Best rotated with short-season grain legumes to rebalance potassium and organic matter."
+        },
+        "references": ["IITA Cassava Breeding Program Ibadan", "FAO Global Cassava Development Strategy", "NRCRI Umudike"],
+        "validationStatus": "reviewed"
+    },
+
+    # 8. Rice (African & Asian Rice)
+    {
+        "id": "rice",
+        "name": "Rice",
+        "localNames": {"sw": "Mchele / Mpunga", "ha": "Shinkafa", "yo": "Iresi", "fr": "Riz", "mg": "Vary"},
+        "scientificName": "Oryza sativa / Oryza glaberrima",
+        "family": "Poaceae",
+        "category": "Cereal",
+        "countryApplicability": ["NG", "EG", "MG", "CI", "ML", "GN", "SN", "SL", "TZ", "UG", "GH", "CM", "LR"],
+        "africanRegions": ["West Africa", "East Africa", "North Africa", "Central Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "MG",
+                "regions": ["Alaotra-Mangoro", "Analamanga", "Vakinankaratra"],
+                "elevationMeters": {"min": 0, "max": 1500},
+                "notes": "Highest per capita consumption in Africa; terraced and lowland paddies."
+            },
+            {
+                "countryCode": "NG",
+                "regions": ["Kebbi", "Ebonyi", "Kano", "Niger"],
+                "elevationMeters": {"min": 50, "max": 600},
+                "notes": "Fadama irrigated floodplains and rainfed lowland valleys."
+            },
+            {
+                "countryCode": "ML",
+                "regions": ["Ségou (Office du Niger)", "Mopti"],
+                "elevationMeters": {"min": 250, "max": 350},
+                "notes": "Major gravity-irrigated rice schemes in the Inner Niger Delta."
+            }
+        ],
+        "growingDurationDays": {"min": 95, "max": 150},
+        "waterRequirementsMm": {"min": 700, "max": 1400},
+        "suitableTemperatureCelsius": {"min": 20, "max": 35, "optimal": 27},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Moderate to heavy feeder under flooded/lowland conditions.",
+        "rootCharacteristics": {
+            "type": "Fibrous with aerenchyma",
+            "depthCm": 40,
+            "notes": "Specialized aerenchyma tissues transport oxygen from leaves to roots in flooded soils."
+        },
+        "description": "Staple food grain undergoing exponential urban demand across Africa. Grown in upland, rainfed lowland, and irrigated systems.",
+        "advantages": ["Rapid urban commercial demand", "High productivity in hydromorphic wetlands (fadama/bas-fonds)", "NERICA varieties offer upland resilience"],
+        "challenges": ["High water dependence", "Rice blast and yellow mottle virus", "Weed competition in upland conditions"],
+        "soilPreference": ["Fluvisols (Alluvial)", "Gleysols", "Vertisols"],
+        "pHRange": {"min": 5.0, "max": 7.0},
+        "rotationCompatibility": {
+            "good": ["cowpea", "soybean", "faba_bean"],
+            "neutral": ["maize"],
+            "poor": ["continuous flooded monoculture without fallow"],
+            "notes": "Dry-season legume rotation in rice paddies breaks aquatic weed cycles and replenishes soil N."
+        },
+        "references": ["AfricaRice Center Abidjan", "IRRI Africa Program", "FAO Rice Factsheet"],
+        "validationStatus": "reviewed"
+    },
+
+    # 9. Common Bean
+    {
+        "id": "common_bean",
+        "name": "Common Bean",
+        "localNames": {"sw": "Maharage", "rw": "Ibihyimbo", "fr": "Haricot commun", "am": "ቦሎቄ"},
+        "scientificName": "Phaseolus vulgaris",
+        "family": "Fabaceae",
+        "category": "Legume",
+        "countryApplicability": ["RW", "BI", "UG", "KE", "TZ", "ET", "CD", "MW", "ZA", "ZW"],
+        "africanRegions": ["East Africa", "Central Africa", "Southern Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "RW",
+                "regions": ["Northern", "Southern", "Eastern"],
+                "elevationMeters": {"min": 1300, "max": 2300},
+                "notes": "Primary dietary protein source; bush and climbing bean varieties."
+            },
+            {
+                "countryCode": "KE",
+                "regions": ["Central", "Rift Valley", "Western"],
+                "elevationMeters": {"min": 1400, "max": 2200},
+                "notes": "Ubiquitous maize intercrop (Rosecoco, Mwitemania)."
+            },
+            {
+                "countryCode": "UG",
+                "regions": ["Southwestern (Kigezi)", "Central", "West Nile"],
+                "elevationMeters": {"min": 1100, "max": 2200},
+                "notes": "Bimodal seasons allow two harvests per year."
+            }
+        ],
+        "growingDurationDays": {"min": 65, "max": 105},
+        "waterRequirementsMm": {"min": 350, "max": 600},
+        "suitableTemperatureCelsius": {"min": 15, "max": 27, "optimal": 21},
+        "nitrogenFixation": True,
+        "nitrogenFixationKgPerHa": {"min": 30, "max": 90, "typical": 50},
+        "nitrogenEffect": "Positive — Fixes atmospheric nitrogen, benefiting following cereal seasons.",
+        "rootCharacteristics": {
+            "type": "Taproot with nodules",
+            "depthCm": 60,
+            "notes": "Moderate rooting depth with nodulation concentrated in the top 20cm of soil."
+        },
+        "description": "The quintessential grain legume of East and Central African highlands, delivering indispensable dietary protein and micronutrients.",
+        "advantages": ["Rapid maturity (65-80 days)", "Essential dietary protein and iron", "Fixes nitrogen", "High market liquidity"],
+        "challenges": ["Bean fly (Ophiomyia spp.)", "Anthracnose and angular leaf spot", "Heat stress above 30°C causing flower drop"],
+        "soilPreference": ["Nitisols", "Ferralsols", "Cambisols"],
+        "pHRange": {"min": 5.8, "max": 7.0},
+        "rotationCompatibility": {
+            "good": ["maize", "sorghum", "banana", "sweet_potato"],
+            "neutral": ["wheat"],
+            "poor": ["other Phaseolus legumes"],
+            "notes": "Classic intercropping partner with maize; fixes nitrogen while utilizing upright stalks for support."
+        },
+        "references": ["PABRA (Pan-Africa Bean Research Alliance) - CIAT", "RAB Rwanda", "KALRO Kenya"],
+        "validationStatus": "reviewed"
+    },
+
+    # 10. Cowpea
+    {
+        "id": "cowpea",
+        "name": "Cowpea",
+        "localNames": {"ha": "Wake", "yo": "Ewa", "ig": "Agwa", "sw": "Kunde", "fr": "Niébé"},
+        "scientificName": "Vigna unguiculata",
+        "family": "Fabaceae",
+        "category": "Legume",
+        "countryApplicability": ["NG", "NE", "BF", "ML", "GH", "SN", "BJ", "TG", "CM", "SD", "KE", "TZ", "MZ", "BW"],
+        "africanRegions": ["West Africa", "Central Africa", "East Africa", "Southern Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "NG",
+                "regions": ["Kano", "Kaduna", "Borno", "Zamfara"],
+                "elevationMeters": {"min": 100, "max": 700},
+                "notes": "Largest global producer; grains and dry fodder are major commodities."
+            },
+            {
+                "countryCode": "NE",
+                "regions": ["Dosso", "Tillabéri", "Maradi"],
+                "elevationMeters": {"min": 150, "max": 500},
+                "notes": "Grown in sandy Sahelian soils intercropped with pearl millet."
+            },
+            {
+                "countryCode": "BF",
+                "regions": ["Boucle du Mouhoun", "Centre-Nord"],
+                "elevationMeters": {"min": 250, "max": 450},
+                "notes": "Drought-tolerant cash and subsistence pulse."
+            }
+        ],
+        "growingDurationDays": {"min": 60, "max": 95},
+        "waterRequirementsMm": {"min": 250, "max": 500},
+        "suitableTemperatureCelsius": {"min": 22, "max": 38, "optimal": 30},
+        "nitrogenFixation": True,
+        "nitrogenFixationKgPerHa": {"min": 40, "max": 120, "typical": 70},
+        "nitrogenEffect": "Strongly positive — High nitrogen-fixing capacity and substantial biomass return.",
+        "rootCharacteristics": {
+            "type": "Deep taproot",
+            "depthCm": 100,
+            "notes": "Rapidly penetrating taproot accesses deep subsoil moisture in sandy soils."
+        },
+        "description": "Warm-season drought-hardy legume native to sub-Saharan Africa. Provides grains, fresh leaves, and highly valued protein-rich dry livestock fodder.",
+        "advantages": ["Extreme drought and heat resilience", "High biological N-fixation", "Edible leaves and seeds", "Striga suicidal germination agent"],
+        "challenges": ["Maruca pod borer and thrips", "Callosobruchus seed weevil in storage", "Low yield if unsprayed"],
+        "soilPreference": ["Arenosols", "Luvisols", "Cambisols"],
+        "pHRange": {"min": 5.5, "max": 7.5},
+        "rotationCompatibility": {
+            "good": ["sorghum", "millet", "maize"],
+            "neutral": ["cassava", "yam"],
+            "poor": ["other Vigna species"],
+            "notes": "Stimulates suicidal germination of Striga hermonthica, reducing parasitic weed pressure for following cereals."
+        },
+        "references": ["IITA Cowpea Program", "INRAN Niger", "FAO Pulses of West Africa"],
+        "validationStatus": "reviewed"
+    },
+
+    # 11. Groundnut (Peanut)
+    {
+        "id": "groundnut",
+        "name": "Groundnut",
+        "localNames": {"ha": "Gyada", "yo": "Epa", "sw": "Karanga", "fr": "Arachide", "pt": "Amendoim"},
+        "scientificName": "Arachis hypogaea",
+        "family": "Fabaceae",
+        "category": "Oilseed",
+        "countryApplicability": ["NG", "SN", "SD", "GH", "ML", "BF", "TZ", "MW", "ZM", "MZ", "ZW", "UG", "CD", "TD"],
+        "africanRegions": ["West Africa", "Central Africa", "East Africa", "Southern Africa", "North Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "SN",
+                "regions": ["Kaolack", "Kaffrine", "Fatick", "Tambacounda"],
+                "elevationMeters": {"min": 10, "max": 150},
+                "notes": "The historic Senegalese Groundnut Basin."
+            },
+            {
+                "countryCode": "NG",
+                "regions": ["Kano", "Jigawa", "Kaduna", "Bauchi"],
+                "elevationMeters": {"min": 200, "max": 800},
+                "notes": "Northern savanna commercial oil and food crop."
+            },
+            {
+                "countryCode": "MW",
+                "regions": ["Lilongwe Plain", "Kasungu"],
+                "elevationMeters": {"min": 900, "max": 1300},
+                "notes": "Key smallholder cash crop and soil enhancer."
+            }
+        ],
+        "growingDurationDays": {"min": 90, "max": 140},
+        "waterRequirementsMm": {"min": 400, "max": 700},
+        "suitableTemperatureCelsius": {"min": 20, "max": 33, "optimal": 26},
+        "nitrogenFixation": True,
+        "nitrogenFixationKgPerHa": {"min": 40, "max": 130, "typical": 80},
+        "nitrogenEffect": "Positive — Fixes nitrogen and enriches light sandy soils.",
+        "rootCharacteristics": {
+            "type": "Taproot with pegs",
+            "depthCm": 90,
+            "notes": "Geocarpic development: flowers pollinate above ground and push pegs into the soil to mature pods."
+        },
+        "description": "Major smallholder oilseed and protein food crop, providing valuable edible oil, food paste, and nitrogen recycling.",
+        "advantages": ["High commercial value and oil content (45-50%)", "Improves soil fertility", "Drought tolerant once established"],
+        "challenges": ["Aflatoxin contamination (Aspergillus flavus) in dry storage", "Rosette virus transmitted by aphids", "Requires loose friable soil for pegging"],
+        "soilPreference": ["Arenosols (Sandy loam)", "Luvisols", "Cambisols"],
+        "pHRange": {"min": 5.5, "max": 7.0},
+        "rotationCompatibility": {
+            "good": ["millet", "sorghum", "maize"],
+            "neutral": ["cassava"],
+            "poor": ["continuous groundnut"],
+            "notes": "Preceding cereals with groundnut yields up to 20-30% boost in subsequent grain weight."
+        },
+        "references": ["ICRISAT Groundnut Improvement", "ISRA Senegal Arachide Research", "IITA"],
+        "validationStatus": "reviewed"
+    },
+
+    # 12. Soybean
+    {
+        "id": "soybean",
+        "name": "Soybean",
+        "localNames": {"ha": "Waken suya", "sw": "Soya", "fr": "Soja"},
+        "scientificName": "Glycine max",
+        "family": "Fabaceae",
+        "category": "Legume",
+        "countryApplicability": ["ZA", "NG", "ZM", "MW", "ZW", "GH", "UG", "ET"],
+        "africanRegions": ["Southern Africa", "West Africa", "East Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "ZA",
+                "regions": ["Mpumalanga", "Free State", "KwaZulu-Natal"],
+                "elevationMeters": {"min": 500, "max": 1600},
+                "notes": "Commercial rotation with maize."
+            },
+            {
+                "countryCode": "NG",
+                "regions": ["Benue", "Kaduna", "Niger"],
+                "elevationMeters": {"min": 150, "max": 700},
+                "notes": "Southern Guinea savanna poultry feed and oil production."
+            },
+            {
+                "countryCode": "ZM",
+                "regions": ["Central", "Lusaka"],
+                "elevationMeters": {"min": 1000, "max": 1400},
+                "notes": "Rapid commercial and smallholder expansion."
+            }
+        ],
+        "growingDurationDays": {"min": 95, "max": 145},
+        "waterRequirementsMm": {"min": 450, "max": 750},
+        "suitableTemperatureCelsius": {"min": 18, "max": 32, "optimal": 25},
+        "nitrogenFixation": True,
+        "nitrogenFixationKgPerHa": {"min": 50, "max": 160, "typical": 95},
+        "nitrogenEffect": "Highly positive — Promiscuous nodulating varieties fix substantial nitrogen for subsequent crops.",
+        "rootCharacteristics": {
+            "type": "Taproot with nodules",
+            "depthCm": 100,
+            "notes": "Deep taproot with prominent Bradyrhizobium nodules."
+        },
+        "description": "Leading industrial legume for animal feed and oil processing, increasingly adopted by African smallholders.",
+        "advantages": ["Massive industrial demand from poultry industry", "High protein (40%) and oil (20%)", "Substantial residual soil nitrogen"],
+        "challenges": ["Soybean rust (Phakopsora pachyrhizi)", "Pod shattering if harvest is delayed", "Often requires specific Bradyrhizobium inoculants"],
+        "soilPreference": ["Luvisols", "Ferralsols", "Cambisols"],
+        "pHRange": {"min": 6.0, "max": 7.2},
+        "rotationCompatibility": {
+            "good": ["maize", "wheat", "sorghum"],
+            "neutral": ["rice"],
+            "poor": ["other legumes"],
+            "notes": "Cornerstone of maize-soybean rotation systems across the globe and Southern Africa."
+        },
+        "references": ["IITA Soybean Breeding Program", "ARC South Africa Grain Crops", "FAO Soybean Guide"],
+        "validationStatus": "reviewed"
+    },
+
+    # 13. Yam
+    {
+        "id": "yam",
+        "name": "White Yam / Water Yam",
+        "localNames": {"ha": "Doya", "yo": "Isu", "ig": "Ji", "fr": "Igname"},
+        "scientificName": "Dioscorea rotundata / Dioscorea alata",
+        "family": "Dioscoreaceae",
+        "category": "Root",
+        "countryApplicability": ["NG", "GH", "CI", "BJ", "TG", "CM", "CF", "GA"],
+        "africanRegions": ["West Africa", "Central Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "NG",
+                "regions": ["Benue", "Taraba", "Nasarawa", "Oyo", "Enugu"],
+                "elevationMeters": {"min": 50, "max": 600},
+                "notes": "The epicenter of world yam production; deep cultural significance."
+            },
+            {
+                "countryCode": "GH",
+                "regions": ["Bono East", "Northern", "Oti"],
+                "elevationMeters": {"min": 100, "max": 400},
+                "notes": "Major export commodity (Pona yam)."
+            },
+            {
+                "countryCode": "CI",
+                "regions": ["Vallée du Bandama", "Zanzan"],
+                "elevationMeters": {"min": 150, "max": 500},
+                "notes": "Savanna-forest transition zone."
+            }
+        ],
+        "growingDurationDays": {"min": 180, "max": 270},
+        "waterRequirementsMm": {"min": 1000, "max": 1600},
+        "suitableTemperatureCelsius": {"min": 22, "max": 35, "optimal": 28},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Heavy nutrient consumer requiring high organic matter.",
+        "rootCharacteristics": {
+            "type": "Underground tuber",
+            "depthCm": 80,
+            "notes": "Produces massive subterranean storage tubers on mounded or ridged seedbeds."
+        },
+        "description": "Prestigious high-value staple tuber of the West African Yam Belt. Central to cultural heritage and cuisine.",
+        "advantages": ["Premium market price and food preference", "Good post-harvest shelf life in yam barns (4-6 months)", "High dry matter content"],
+        "challenges": ["High seed tuber cost (takes 30% of harvest for seed)", "High labor demand for mounding and staking", "Yam anthracnose disease"],
+        "soilPreference": ["Ferralsols (Deep fertile loams)", "Acrisols", "Luvisols"],
+        "pHRange": {"min": 5.5, "max": 7.0},
+        "rotationCompatibility": {
+            "good": ["cowpea", "groundnut", "maize"],
+            "neutral": ["cassava"],
+            "poor": ["continuous yam"],
+            "notes": "Traditionally planted as first crop after bush fallow; benefits from preceding legume green manures."
+        },
+        "references": ["IITA Yam Breeding Program", "NRCRI Umudike Yam Research", "CSIR-CRI Ghana"],
+        "validationStatus": "reviewed"
+    },
+
+    # 14. Sweet Potato
+    {
+        "id": "sweet_potato",
+        "name": "Sweet Potato",
+        "localNames": {"sw": "Viazi vitamu", "am": "ስኳር ድንች", "yo": "Odunkun", "ha": "Dankali", "fr": "Patate douce"},
+        "scientificName": "Ipomoea batatas",
+        "family": "Convolvulaceae",
+        "category": "Root",
+        "countryApplicability": ["MW", "NG", "TZ", "UG", "ET", "RW", "BI", "AO", "MZ", "KE", "ZA", "GH"],
+        "africanRegions": ["East Africa", "West Africa", "Central Africa", "Southern Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "MW",
+                "regions": ["Southern", "Central"],
+                "elevationMeters": {"min": 500, "max": 1400},
+                "notes": "One of the largest producers globally; major food security reserve."
+            },
+            {
+                "countryCode": "UG",
+                "regions": ["Eastern", "Central"],
+                "elevationMeters": {"min": 1000, "max": 1600},
+                "notes": "Orange-Fleshed Sweet Potato (OFSP) biofortification leader."
+            },
+            {
+                "countryCode": "RW",
+                "regions": ["Southern", "Eastern"],
+                "elevationMeters": {"min": 1300, "max": 1900},
+                "notes": "Short season rotation crop on hillside terraces."
+            }
+        ],
+        "growingDurationDays": {"min": 90, "max": 150},
+        "waterRequirementsMm": {"min": 450, "max": 750},
+        "suitableTemperatureCelsius": {"min": 18, "max": 30, "optimal": 24},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Moderate feeder; dense foliage protects soil from erosion and conserves moisture.",
+        "rootCharacteristics": {
+            "type": "Tuberous roots",
+            "depthCm": 50,
+            "notes": "Sprawling vine canopy with shallow adventitious storage tubers."
+        },
+        "description": "Fast-maturing, nutrient-dense root crop. Orange-fleshed varieties provide critical Vitamin A to rural families.",
+        "advantages": ["Short cycle (3-4 months)", "Rich in beta-carotene (OFSP varieties)", "Ground-covering vines suppress weeds and halt erosion"],
+        "challenges": ["Sweet potato weevil (Cylas spp.) during dry periods", "Viral complex diseases (SPVD)", "Perishable post-harvest"],
+        "soilPreference": ["Cambisols (Sandy loam)", "Ferralsols", "Arenosols"],
+        "pHRange": {"min": 5.2, "max": 6.8},
+        "rotationCompatibility": {
+            "good": ["maize", "common_bean", "millet"],
+            "neutral": ["cassava"],
+            "poor": ["continuous sweet potato"],
+            "notes": "Ideal short-cycle catch crop between major cereal seasons."
+        },
+        "references": ["CIP (International Potato Center) Africa", "NARO Uganda", "FAO Sweet Potato Profile"],
+        "validationStatus": "reviewed"
+    },
+
+    # 15. Highland Banana / Cooking Banana
+    {
+        "id": "banana",
+        "name": "Cooking & Dessert Banana",
+        "localNames": {"sw": "Ndizi / Matooke", "lg": "Matooke", "rw": "Igitoki", "fr": "Banane"},
+        "scientificName": "Musa acuminata / Musa balbisiana (AAA-EA)",
+        "family": "Musaceae",
+        "category": "Root", # categorized as staple fruit/tuber analogue
+        "countryApplicability": ["UG", "RW", "BI", "TZ", "CD", "KE", "CM", "CI", "GH"],
+        "africanRegions": ["East Africa", "Central Africa", "West Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "UG",
+                "regions": ["Western (Mbarara, Bushenyi)", "Central"],
+                "elevationMeters": {"min": 1000, "max": 2000},
+                "notes": "East African Highland Banana (Matooke) is the national staple."
+            },
+            {
+                "countryCode": "TZ",
+                "regions": ["Kagera", "Kilimanjaro", "Mbeya"],
+                "elevationMeters": {"min": 800, "max": 1800},
+                "notes": "Volcanic slopes and Lake Victoria basin agroforestry."
+            },
+            {
+                "countryCode": "RW",
+                "regions": ["Eastern", "Western"],
+                "elevationMeters": {"min": 1300, "max": 1900},
+                "notes": "Terraced banana grooves combined with beans."
+            }
+        ],
+        "growingDurationDays": {"min": 300, "max": 450},
+        "waterRequirementsMm": {"min": 1000, "max": 2000},
+        "suitableTemperatureCelsius": {"min": 18, "max": 32, "optimal": 26},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Heavy feeder of potassium and water; perennial soil cover.",
+        "rootCharacteristics": {
+            "type": "Shallow spreading adventitious cord roots",
+            "depthCm": 60,
+            "notes": "Extensive shallow root mats requiring heavy mulching to conserve moisture."
+        },
+        "description": "Perennial cornerstone staple across the Great Lakes region of East Africa, yielding food continuously year-round.",
+        "advantages": ["Perennial continuous food supply", "Provides microclimate and mulch for intercrops", "High caloric production per hectare"],
+        "challenges": ["Banana Bacterial Wilt (BXW)", "Black Sigatoka fungal infection", "Fusarium wilt TR4 threat", "Heavy potassium demand"],
+        "soilPreference": ["Andosols (Volcanic)", "Nitisols", "Ferralsols"],
+        "pHRange": {"min": 5.5, "max": 7.0},
+        "rotationCompatibility": {
+            "good": ["common_bean", "coffee", "cowpea"],
+            "neutral": ["cassava"],
+            "poor": ["monoculture without mulch"],
+            "notes": "Classic intercrop with shade coffee and climbing common beans in East African home gardens."
+        },
+        "references": ["IITA Banana Breeding", "NARO Uganda Banana Program", "Bioversity International"],
+        "validationStatus": "reviewed"
+    },
+
+    # 16. Plantain
+    {
+        "id": "plantain",
+        "name": "Plantain",
+        "localNames": {"fr": "Banane plantain", "yo": "Ogede agbagba", "ig": "Abrika", "ak": "Bɔdeɛ"},
+        "scientificName": "Musa paradisiaca (AAB)",
+        "family": "Musaceae",
+        "category": "Root",
+        "countryApplicability": ["CM", "GH", "CI", "NG", "CD", "GA", "GQ", "LR", "SL", "CG"],
+        "africanRegions": ["Central Africa", "West Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "CM",
+                "regions": ["South-West", "Littoral", "Centre"],
+                "elevationMeters": {"min": 0, "max": 1200},
+                "notes": "Major dietary staple and cash generator for forest farmers."
+            },
+            {
+                "countryCode": "GH",
+                "regions": ["Ashanti", "Eastern", "Western North"],
+                "elevationMeters": {"min": 100, "max": 600},
+                "notes": "Cocoa agroforestry companion and food staple (Fufu / Ampesi)."
+            },
+            {
+                "countryCode": "CI",
+                "regions": ["Sud-Comoé", "Indénié-Djuablin"],
+                "elevationMeters": {"min": 50, "max": 400},
+                "notes": "Key ingredient in Aloco (fried plantain)."
+            }
+        ],
+        "growingDurationDays": {"min": 300, "max": 420},
+        "waterRequirementsMm": {"min": 1200, "max": 2200},
+        "suitableTemperatureCelsius": {"min": 20, "max": 35, "optimal": 27},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "High potassium and organic matter requirement.",
+        "rootCharacteristics": {
+            "type": "Adventitious shallow",
+            "depthCm": 60,
+            "notes": "Shallow rooting network requiring organic leaf litter cover."
+        },
+        "description": "Essential starch staple and companion crop across the humid tropical rainforest belt of West and Central Africa.",
+        "advantages": ["Continuous harvest windows", "Excellent shade nurse crop for establishing young cocoa", "High market value in urban centers"],
+        "challenges": ["Black Sigatoka leaf disease", "Banana weevil (Cosmopolites sordidus)", "Rapid decline in yield after 3-4 ratoon cycles"],
+        "soilPreference": ["Ferralsols", "Acrisols", "Fluvisols"],
+        "pHRange": {"min": 5.0, "max": 7.0},
+        "rotationCompatibility": {
+            "good": ["cocoa", "cowpea", "yam"],
+            "neutral": ["cassava"],
+            "poor": ["wind-exposed monoculture"],
+            "notes": "Regularly interplanted into new cocoa orchards to provide crucial protective shade and interim income."
+        },
+        "references": ["CARBAP Cameroon", "IITA Plantain Research", "CSIR-CRI Ghana"],
+        "validationStatus": "reviewed"
+    },
+
+    # 17. Cocoa
+    {
+        "id": "cocoa",
+        "name": "Cocoa",
+        "localNames": {"fr": "Cacao", "yo": "Koko", "ak": "Kookoo"},
+        "scientificName": "Theobroma cacao",
+        "family": "Malvaceae",
+        "category": "Cash/Tree",
+        "countryApplicability": ["CI", "GH", "CM", "NG", "TG", "ST", "LR", "SL", "GA", "CG"],
+        "africanRegions": ["West Africa", "Central Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "CI",
+                "regions": ["Haut-Sassandra", "San-Pédro", "Nawa", "Gbôklé"],
+                "elevationMeters": {"min": 50, "max": 400},
+                "notes": "World's largest cocoa producer (~40% of global supply)."
+            },
+            {
+                "countryCode": "GH",
+                "regions": ["Western North", "Ashanti", "Ahafo", "Eastern"],
+                "elevationMeters": {"min": 100, "max": 500},
+                "notes": "Renowned for premium high-grade fermented cocoa beans."
+            },
+            {
+                "countryCode": "CM",
+                "regions": ["Centre", "South-West", "Littoral"],
+                "elevationMeters": {"min": 100, "max": 700},
+                "notes": "Key forest zone export generator."
+            }
+        ],
+        "growingDurationDays": {"min": 180, "max": 240}, # Perennial tree: pod development cycle
+        "waterRequirementsMm": {"min": 1200, "max": 2000},
+        "suitableTemperatureCelsius": {"min": 21, "max": 32, "optimal": 26},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Perennial agroforestry tree; maintains soil organic carbon via continuous leaf litter recycling.",
+        "rootCharacteristics": {
+            "type": "Deep taproot with lateral mat",
+            "depthCm": 150,
+            "notes": "Stout taproot reaching 1.5-2m with dense surface feeder roots under leaf mulch."
+        },
+        "description": "Global commercial cash crop producing chocolate beans. West Africa produces nearly 70% of the world's entire crop.",
+        "advantages": ["Major foreign exchange generator", "Maintains forest canopy in shaded agroforestry", "Long productive lifespan (25-30 years)"],
+        "challenges": ["Cocoa swollen shoot virus (CSSVD)", "Black pod disease (Phytophthora)", "Vulnerability to extended dry seasons under climate change"],
+        "soilPreference": ["Ferralsols", "Acrisols (Deep, well drained, high organic matter)"],
+        "pHRange": {"min": 6.0, "max": 7.5},
+        "rotationCompatibility": {
+            "good": ["plantain", "shade trees (Albizia, Terminalia)"],
+            "neutral": ["yam"],
+            "poor": ["clean weeded clearings"],
+            "notes": "Thrives under agroforestry shade trees that fix nitrogen and temper maximum temperatures."
+        },
+        "references": ["CRIG (Cocoa Research Institute of Ghana)", "CNRA Côte d'Ivoire", "ICCO International Cocoa Organization"],
+        "validationStatus": "reviewed"
+    },
+
+    # 18. Coffee (Arabica & Robusta)
+    {
+        "id": "coffee",
+        "name": "Coffee (Arabica / Robusta)",
+        "localNames": {"am": "ቡና", "om": "Buna", "sw": "Kahawa", "fr": "Café"},
+        "scientificName": "Coffea arabica / Coffea canephora",
+        "family": "Rubiaceae",
+        "category": "Cash/Tree",
+        "countryApplicability": ["ET", "UG", "KE", "RW", "BI", "TZ", "CI", "CM", "CD", "AO", "MG", "GN"],
+        "africanRegions": ["East Africa", "Central Africa", "West Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "ET",
+                "regions": ["Oromia (Jimma, Sidama, Yirgacheffe)", "SNNPR"],
+                "elevationMeters": {"min": 1500, "max": 2400},
+                "notes": "Birthplace and genetic reservoir of Coffea arabica; heirloom garden and forest systems."
+            },
+            {
+                "countryCode": "UG",
+                "regions": ["Central (Robusta)", "Elgon & Rwenzori (Arabica)"],
+                "elevationMeters": {"min": 1000, "max": 2200},
+                "notes": "Major Robusta native habitat and commercial export."
+            },
+            {
+                "countryCode": "RW",
+                "regions": ["Western (Lake Kivu shores)", "Southern"],
+                "elevationMeters": {"min": 1400, "max": 2000},
+                "notes": "High-altitude specialty specialty Arabica."
+            }
+        ],
+        "growingDurationDays": {"min": 210, "max": 270},
+        "waterRequirementsMm": {"min": 1200, "max": 2000},
+        "suitableTemperatureCelsius": {"min": 15, "max": 28, "optimal": 20},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Moderate nutrient consumer; benefits substantially from nitrogen-fixing shade trees (e.g., Acacia, Erythrina).",
+        "rootCharacteristics": {
+            "type": "Central taproot with axial roots",
+            "depthCm": 150,
+            "notes": "Deep central taproot anchoring the shrub, with extensive feeder roots in the top 30cm."
+        },
+        "description": "High-value beverage cash crop indigenous to Ethiopian highlands (Arabica) and the Congo basin (Robusta).",
+        "advantages": ["High international specialty market pricing", "Supports agroforestry biodiversity and carbon storage", "Long lifespan (30+ years)"],
+        "challenges": ["Coffee Berry Disease (CBD)", "Coffee Leaf Rust (Hemileia vastatrix)", "High temperature sensitivity in Arabica"],
+        "soilPreference": ["Nitisols (Deep fertile volcanic)", "Andosols", "Ferralsols"],
+        "pHRange": {"min": 5.0, "max": 6.5},
+        "rotationCompatibility": {
+            "good": ["banana", "climbing beans", "shade legumes"],
+            "neutral": ["sweet_potato"],
+            "poor": ["monoculture exposed to direct sun without irrigation"],
+            "notes": "Intercropping Arabica coffee with highland bananas increases farmer resilience and reduces thermal stress."
+        },
+        "references": ["EIAR National Coffee Research Center (Jimma)", "Uganda Coffee Development Authority (UCDA)", "ICO"],
+        "validationStatus": "reviewed"
+    },
+
+    # 19. Barley
+    {
+        "id": "barley",
+        "name": "Barley",
+        "localNames": {"am": "ገብስ", "om": "Garbuu", "ti": "ስዓሪ", "ar": "شعير"},
+        "scientificName": "Hordeum vulgare",
+        "family": "Poaceae",
+        "category": "Cereal",
+        "countryApplicability": ["ET", "ER", "MA", "DZ", "TN", "EG", "ZA", "KE"],
+        "africanRegions": ["North Africa", "East Africa", "Southern Africa"],
+        "regionalSuitability": [
+            {
+                "countryCode": "ET",
+                "regions": ["Oromia (Bale, Arsi)", "Amhara (North Shewa, Wollo)"],
+                "elevationMeters": {"min": 2000, "max": 3500},
+                "notes": "Extremely high elevation frost-tolerant staple (food and malt barley)."
+            },
+            {
+                "countryCode": "MA",
+                "regions": ["Chaouia-Ouardigha", "Marrakech-Tensift-El Haouz"],
+                "elevationMeters": {"min": 200, "max": 1400},
+                "notes": "Drought-prone Mediterranean cereal."
+            },
+            {
+                "countryCode": "DZ",
+                "regions": ["Hauts Plateaux", "Sétif", "Batna"],
+                "elevationMeters": {"min": 600, "max": 1200},
+                "notes": "Dryland cereal for human food and animal forage."
+            }
+        ],
+        "growingDurationDays": {"min": 80, "max": 130},
+        "waterRequirementsMm": {"min": 250, "max": 450},
+        "suitableTemperatureCelsius": {"min": 5, "max": 24, "optimal": 16},
+        "nitrogenFixation": False,
+        "nitrogenEffect": "Moderate depletion — Tolerates saline and marginal soils better than wheat.",
+        "rootCharacteristics": {
+            "type": "Fibrous",
+            "depthCm": 80,
+            "notes": "Dense fibrous rooting network with high salinity and drought resistance."
+        },
+        "description": "One of Africa's hardiest highland and Mediterranean cereals, flourishing at altitudes up to 3,500m in Ethiopia and in arid North African plains.",
+        "advantages": ["Superior cold and frost tolerance in highlands", "High salinity and drought tolerance", "Fast cycle (80-100 days)", "Malt industry demand"],
+        "challenges": ["Scald and net blotch fungal diseases", "Lower grain price than wheat unless high-spec malting grade"],
+        "soilPreference": ["Cambisols", "Luvisols", "Calcisols", "Vertisols"],
+        "pHRange": {"min": 6.0, "max": 8.5},
+        "rotationCompatibility": {
+            "good": ["faba_bean", "lentil", "chickpea"],
+            "neutral": ["teff"],
+            "poor": ["wheat"],
+            "notes": "Following faba bean significantly elevates grain plumpness and yield in Ethiopian highlands."
+        },
+        "references": ["ICARDA Barley Breeding Program", "EIAR Highland Cereals Program", "INRA Morocco"],
+        "validationStatus": "reviewed"
+    }
+]
+
+print(f"Total structured African crops in catalog: {len(CROPS_CATALOG)}")
+
