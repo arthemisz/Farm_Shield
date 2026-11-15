@@ -1,0 +1,88 @@
+{
+  "Ethiopia (Bishoftu)": {
+    "status": "LIVE",
+    "sceneId": "S2A_MSIL2A_20261031T074021_R092_T37PDK_20261031T130510",
+    "cloudCover": 0.82,
+    "currentNdvi": 0.2081,
+    "spatialSampling": {
+      "utmZone": 37,
+      "utmSouth": false,
+      "easting": 497800.23,
+      "northing": 967213.12,
+      "rasterColumn": 9784.0,
+      "rasterRow": 3280.7,
+      "tileIndex": 151,
+      "tileGrid": "(19, 6)",
+      "window": "25x25 pixels (radius=12)",
+      "meanRedReflectance": 0.223,
+      "meanNirReflectance": 0.3382
+    },
+    "validPixels": 625,
+    "invalidPixels": 0,
+    "rasterStatus": "LIVE - actual coordinate tile 151 sampled. 625 valid pixels used for NDVI computation."
+  },
+  "Kenya (Nakuru)": {
+    "status": "LIVE",
+    "sceneId": "S2B_MSIL2A_20261027T075019_R135_T36MZE_20261027T121506",
+    "cloudCover": 14.28,
+    "currentNdvi": 0.1308,
+    "spatialSampling": {
+      "utmZone": 36,
+      "utmSouth": true,
+      "easting": 840659.82,
+      "northing": 9966793.32,
+      "rasterColumn": 4068.0,
+      "rasterRow": 3320.7,
+      "tileIndex": 139,
+      "tileGrid": "(7, 6)",
+      "window": "25x25 pixels (radius=12)",
+      "meanRedReflectance": 0.2174,
+      "meanNirReflectance": 0.2827
+    },
+    "validPixels": 625,
+    "invalidPixels": 0,
+    "rasterStatus": "LIVE - actual coordinate tile 139 sampled. 625 valid pixels used for NDVI computation."
+  },
+  "Nigeria (Ibadan)": {
+    "status": "UNAVAILABLE",
+    "sceneId": null,
+    "cloudCover": null,
+    "currentNdvi": null,
+    "spatialSampling": null,
+    "validPixels": null,
+    "invalidPixels": null,
+    "rasterStatus": "UNAVAILABLE - no cloud-free Sentinel-2 scenes found in the search window, or no network connection to Planetary Computer STAC API."
+  },
+  "Ghana (Kumasi)": {
+    "status": "PARTIAL",
+    "sceneId": "S2B_MSIL2A_20261022T102049_R065_T30NXN_20261022T161659",
+    "cloudCover": 17.4,
+    "currentNdvi": null,
+    "spatialSampling": null,
+    "validPixels": null,
+    "invalidPixels": null,
+    "rasterStatus": "PARTIAL - STAC scene identified; band HREFs resolved; pixel reads not completed. Error: URL_SIGNING_FAILED."
+  },
+  "South Africa (Potchefstroom)": {
+    "status": "LIVE",
+    "sceneId": "S2A_MSIL2A_20261106T080031_R035_T35JNL_20261106T143708",
+    "cloudCover": 17.69,
+    "currentNdvi": 0.1069,
+    "spatialSampling": {
+      "utmZone": 35,
+      "utmSouth": true,
+      "easting": 509946.85,
+      "northing": 7045680.36,
+      "rasterColumn": 996.7,
+      "rasterRow": 5434.0,
+      "tileIndex": 221,
+      "tileGrid": "(1, 10)",
+      "window": "25x25 pixels (radius=12)",
+      "meanRedReflectance": 0.2657,
+      "meanNirReflectance": 0.3257
+    },
+    "validPixels": 625,
+    "invalidPixels": 0,
+    "rasterStatus": "LIVE - actual coordinate tile 221 sampled. 625 valid pixels used for NDVI computation."
+  }
+}
