@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "FarmShield",
+    "tagline": "Kilimo Bora. Mavuno Mengi. Mustakabali Thabiti.",
+    "globalPlatform": "Jukwaa la Kimataifa la Akili ya Kilimo, Kuanzia Ethiopia.",
+    "demoData": "DATA YA MAONYESHO",
+    "loading": "Inapakia...",
+    "save": "Hifadhi",
+    "cancel": "Ghairi",
+    "delete": "Futa",
+    "edit": "Hariri",
+    "filter": "Chuja",
+    "search": "Tafuta",
+    "actions": "Vitendo",
+    "activeCountry": "Nchi Iliyochaguliwa"
+  },
+  "nav": {
+    "dashboard": "Dashibodi",
+    "myFarms": "Mashamba Yangu",
+    "climate": "Hali ya Hewa",
+    "soil": "Taarifa za Udongo",
+    "cropDatabase": "Orodha ya Mazao",
+    "rotationPlanner": "Mpangilio wa Mzunguko wa Mazao",
+    "interactiveMap": "Ramani",
+    "reports": "Ripoti",
+    "settings": "Mipangilio"
+  }
+}
+
