@@ -1,0 +1,25 @@
+{
+  "importId": "import_ET_20261114_173417_1",
+  "datasetType": "crop_calendar",
+  "countryCode": "ET",
+  "title": "Imported crop_calendar Dataset",
+  "source": {
+    "name": "EIAR 2024 Test Import",
+    "url": null,
+    "license": "Open Access / Government Extension",
+    "version": "1.0",
+    "uploadedBy": "Agronomist / User",
+    "importTimestamp": "2026-11-14T17:34:17.019732+00:00"
+  },
+  "recordCount": 1,
+  "records": [
+    {
+      "cropId": "teff",
+      "cropName": "Teff",
+      "plantingWindow": "July-August",
+      "harvestWindow": "November-December",
+      "agroecologicalZone": "Mid-Highlands",
+      "sourceCitation": "EIAR 2024"
+    }
+  ]
+}
