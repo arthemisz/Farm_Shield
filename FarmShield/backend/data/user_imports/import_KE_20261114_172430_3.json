@@ -1,0 +1,41 @@
+{
+  "importId": "import_KE_20261114_172430_3",
+  "datasetType": "crop_calendar",
+  "countryCode": "KE",
+  "title": "Kenya Extension Drylands Calendar",
+  "source": {
+    "name": "KALRO Extension Bulletins",
+    "url": null,
+    "license": "Open Access / Government Extension",
+    "version": "1.0",
+    "uploadedBy": "Agronomist / User",
+    "importTimestamp": "2026-11-14T17:24:30.629970+00:00"
+  },
+  "recordCount": 3,
+  "records": [
+    {
+      "cropId": "sorghum",
+      "cropName": "Sorghum",
+      "plantingWindow": "July 1 - July 20",
+      "harvestWindow": "November 15 - December 20",
+      "agroecologicalZone": "Northern Savanna",
+      "sourceCitation": "National Agricultural Extension Service"
+    },
+    {
+      "cropId": "cowpea",
+      "cropName": "Cowpea",
+      "plantingWindow": "July 10 - August 5",
+      "harvestWindow": "October 1 - October 30",
+      "agroecologicalZone": "Sudan Savanna",
+      "sourceCitation": "Regional Drylands Research Institute"
+    },
+    {
+      "cropId": "millet",
+      "cropName": "Pearl Millet",
+      "plantingWindow": "June 20 - July 15",
+      "harvestWindow": "October 15 - November 15",
+      "agroecologicalZone": "Sahel Belt",
+      "sourceCitation": "FAO National Crop Calendar"
+    }
+  ]
+}
