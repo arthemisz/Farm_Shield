@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "ፋርምሺልድ (FarmShield)",
+    "tagline": "ብልህ እርሻ። የተትረፈረፈ ምርት። አስተማማኝ ነገ።",
+    "globalPlatform": "ዓለም አቀፍ የግብርና መረጃ መድረክ፤ ከኢትዮጵያ ጀምሮ።",
+    "demoData": "የሙከራ መረጃ",
+    "loading": "በመጫን ላይ...",
+    "save": "አስቀምጥ",
+    "cancel": "ይቅር",
+    "delete": "ሰርዝ",
+    "edit": "አስተካክል",
+    "filter": "አጣራ",
+    "search": "ፈልግ",
+    "actions": "ተግባራት",
+    "activeCountry": "የተመረጠ አገር"
+  },
+  "nav": {
+    "dashboard": "ዋና ዳሽቦርድ",
+    "myFarms": "የእኔ እርሻዎች",
+    "climate": "የአየር ንብረት መረጃ",
+    "soil": "የአፈር መረጃ",
+    "cropDatabase": "የሰብል ዝርዝር",
+    "rotationPlanner": "የሰብል ሽክርክር እቅድ",
+    "interactiveMap": "ይነጋጋሪ ካርታ",
+    "reports": "ሪፖርቶች",
+    "settings": "ቅንብሮች"
+  }
+}
+
