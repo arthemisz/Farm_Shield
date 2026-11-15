@@ -1,0 +1,41 @@
+{
+  "common": {
+    "appName": "FarmShield",
+    "tagline": "Smarter Farming. Stronger Harvests. A Resilient Future.",
+    "globalPlatform": "A Global Agricultural Intelligence Platform, Starting in Ethiopia.",
+    "demoData": "DEMO DATA",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "filter": "Filter",
+    "search": "Search",
+    "actions": "Actions",
+    "activeCountry": "Active Country",
+    "countrySupport": {
+      "fullySupported": "Fully Supported",
+      "planned": "Planned Expansion",
+      "inDevelopment": "In Development"
+    }
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "myFarms": "My Farms",
+    "climate": "Climate Intelligence",
+    "soil": "Soil Information",
+    "cropDatabase": "Crop Database",
+    "rotationPlanner": "Crop Rotation Planner",
+    "interactiveMap": "Interactive Map",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "welcomeTitle": "Climate-Resilient Crop Rotation",
+    "registeredFarms": "Registered Farms",
+    "climateMonitoring": "Climate Monitoring",
+    "activeCrops": "Validated Crops",
+    "quickActions": "Quick Actions"
+  }
+}
+
