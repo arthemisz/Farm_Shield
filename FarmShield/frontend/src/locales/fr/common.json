@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "FarmShield",
+    "tagline": "Une Agriculture Plus Intelligente. De Meilleures Récoltes. Un Avenir Résilient.",
+    "globalPlatform": "Une Plateforme Mondiale d'Intelligence Agricole, Débutant en Éthiopie.",
+    "demoData": "DONNÉES DE DÉMONSTRATION",
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "filter": "Filtrer",
+    "search": "Rechercher",
+    "actions": "Actions",
+    "activeCountry": "Pays Actif"
+  },
+  "nav": {
+    "dashboard": "Tableau de Bord",
+    "myFarms": "Mes Fermes",
+    "climate": "Intelligence Climatique",
+    "soil": "Informations sur le Sol",
+    "cropDatabase": "Base de Données des Cultures",
+    "rotationPlanner": "Planificateur d'Assolement",
+    "interactiveMap": "Carte Interactive",
+    "reports": "Rapports",
+    "settings": "Paramètres"
+  }
+}
+
