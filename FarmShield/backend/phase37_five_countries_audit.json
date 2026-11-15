@@ -1,0 +1,77 @@
+[
+  {
+    "country": "Ethiopia",
+    "code": "ET",
+    "coordinates": [
+      8.75,
+      38.98
+    ],
+    "primaryCrop": "teff",
+    "nasaPower": "CACHED",
+    "chirps": "CACHED",
+    "soilGrids": "CACHED",
+    "sentinel2": "PARTIAL",
+    "faostat": "CACHED",
+    "cropCalendar": "LIVE"
+  },
+  {
+    "country": "Kenya",
+    "code": "KE",
+    "coordinates": [
+      -0.3,
+      36.06
+    ],
+    "primaryCrop": "maize",
+    "nasaPower": "LIVE",
+    "chirps": "LIVE",
+    "soilGrids": "LIVE",
+    "sentinel2": "LIVE",
+    "faostat": "CACHED",
+    "cropCalendar": "LIVE"
+  },
+  {
+    "country": "Nigeria",
+    "code": "NG",
+    "coordinates": [
+      7.37,
+      3.94
+    ],
+    "primaryCrop": "cassava",
+    "nasaPower": "CACHED",
+    "chirps": "LIVE",
+    "soilGrids": "CACHED",
+    "sentinel2": "UNAVAILABLE",
+    "faostat": "CACHED",
+    "cropCalendar": "LIVE"
+  },
+  {
+    "country": "Ghana",
+    "code": "GH",
+    "coordinates": [
+      6.69,
+      -1.62
+    ],
+    "primaryCrop": "cocoa",
+    "nasaPower": "LIVE",
+    "chirps": "LIVE",
+    "soilGrids": "LIVE",
+    "sentinel2": "DEMONSTRATION",
+    "faostat": "CACHED",
+    "cropCalendar": "LIVE"
+  },
+  {
+    "country": "South Africa",
+    "code": "ZA",
+    "coordinates": [
+      -26.71,
+      27.1
+    ],
+    "primaryCrop": "maize",
+    "nasaPower": "LIVE",
+    "chirps": "LIVE",
+    "soilGrids": "LIVE",
+    "sentinel2": "LIVE",
+    "faostat": "CACHED",
+    "cropCalendar": "LIVE"
+  }
+]
