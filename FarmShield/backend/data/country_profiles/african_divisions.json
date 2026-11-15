@@ -1,0 +1,2039 @@
+{
+  "DZ": {
+    "admin1_label": "Province (Wilaya)",
+    "admin2_label": "District / Municipality (Da\u00efra)",
+    "cities": {
+      "Algiers": [
+        "Sidi M'Hamed",
+        "Bab El Oued",
+        "Hussein Dey",
+        "Bouzareah",
+        "Bir Mourad Ra\u00efs",
+        "Dar El Be\u00efda",
+        "Ch\u00e9raga",
+        "Z\u00e9ralda"
+      ],
+      "Oran": [
+        "Oran City",
+        "Es S\u00e9nia",
+        "Bir El Djir",
+        "Arzew",
+        "A\u00efn El Turk",
+        "Bethioua"
+      ],
+      "Constantine": [
+        "Constantine Central",
+        "El Khroub",
+        "Hamma Bouziane",
+        "Zighoud Youcef",
+        "Didouche Mourad"
+      ],
+      "Annaba": [
+        "Annaba Port",
+        "El Bouni",
+        "El Hadjar",
+        "Berrahal",
+        "Sera\u00efdi"
+      ],
+      "Blida": [
+        "Blida Central",
+        "Boufarik",
+        "Ouled Ya\u00efch",
+        "Mouza\u00efa",
+        "Larba\u00e2"
+      ],
+      "S\u00e9tif": [
+        "S\u00e9tif Central",
+        "El Eulma",
+        "A\u00efn Oulmene",
+        "A\u00efn Azel",
+        "Bougaa"
+      ],
+      "Batna": [
+        "Batna Central",
+        "Barika",
+        "A\u00efn Touta",
+        "Merouana",
+        "Arris"
+      ],
+      "Biskra": [
+        "Biskra Oasis",
+        "Tolga",
+        "Sidi Okba",
+        "Ouled Djellal"
+      ],
+      "Tlemcen": [
+        "Tlemcen City",
+        "Mansourah",
+        "Maghnia",
+        "Remchi",
+        "Ghazaouet"
+      ]
+    }
+  },
+  "EG": {
+    "admin1_label": "Governorate (Muhafazah)",
+    "admin2_label": "District / Center (Markaz / Kism)",
+    "cities": {
+      "Cairo": [
+        "Nasr City",
+        "Heliopolis",
+        "Maadi",
+        "Zamalek",
+        "Shubra",
+        "Helwan",
+        "New Cairo",
+        "El Marg"
+      ],
+      "Alexandria": [
+        "Al Montazah",
+        "Al Raml",
+        "Sidi Gaber",
+        "Bab Sharqi",
+        "Al Amriya",
+        "Al Gomrok",
+        "Al Dekheila"
+      ],
+      "Giza": [
+        "Dokki",
+        "Agouza",
+        "Al Haram",
+        "Al Omraniya",
+        "Imbaba",
+        "6th of October City",
+        "Sheikh Zayed"
+      ],
+      "Dakahlia (Mansoura)": [
+        "Mansoura City",
+        "Talkha",
+        "Mit Ghamr",
+        "Dikirnis",
+        "Belqas",
+        "Aga"
+      ],
+      "Sharqia (Zagazig)": [
+        "Zagazig",
+        "Bilbeis",
+        "Faqous",
+        "Minya El Qamh",
+        "10th of Ramadan City"
+      ],
+      "Gharbia (Tanta)": [
+        "Tanta Central",
+        "El Mahalla El Kubra",
+        "Zifta",
+        "Kafr El Zayat"
+      ],
+      "Beheira (Damanhur)": [
+        "Damanhur",
+        "Kafr El Dawwar",
+        "Rashid (Rosetta)",
+        "Abu Hummus",
+        "Kom Hamada"
+      ],
+      "Faiyum": [
+        "Faiyum City",
+        "Ibsheway",
+        "Sinnuris",
+        "Tamia",
+        "Youssef El Seddik"
+      ],
+      "Asyut": [
+        "Asyut Central",
+        "Dayrut",
+        "Manfalut",
+        "El Qusiya",
+        "Abnub"
+      ],
+      "Minya": [
+        "Minya City",
+        "Mallawi",
+        "Samalut",
+        "Beni Mazar",
+        "Maghagha"
+      ],
+      "Sohag": [
+        "Sohag Central",
+        "Girga",
+        "Tahta",
+        "Akhmim"
+      ],
+      "Qena": [
+        "Qena City",
+        "Nag Hammadi",
+        "Dishna",
+        "Qus"
+      ],
+      "Luxor": [
+        "Luxor City",
+        "Karnak",
+        "Armant",
+        "Esna"
+      ],
+      "Aswan": [
+        "Aswan City",
+        "Kom Ombo",
+        "Edfu",
+        "Nasr El Nuba"
+      ]
+    }
+  },
+  "LY": {
+    "admin1_label": "District (Shabiyah)",
+    "admin2_label": "Municipality (Baladiyah)",
+    "cities": {
+      "Tripoli": [
+        "Hay Al Andalus",
+        "Souq Al Jum'aa",
+        "Abu Salim",
+        "Tajoura",
+        "Janzour",
+        "Ain Zara"
+      ],
+      "Benghazi": [
+        "Al Birka",
+        "Al Sabri",
+        "Madinat Benghazi",
+        "Garyounis",
+        "Buatni",
+        "Al Kuwayfiyah"
+      ],
+      "Misrata": [
+        "Misrata Central",
+        "Zreig",
+        "Zawiyat Al Mahjoub",
+        "Qasr Ahmad"
+      ],
+      "Zawiya": [
+        "Zawiya Central",
+        "Bir Tirfas",
+        "Abu Surrah"
+      ],
+      "Bayda": [
+        "Bayda Central",
+        "Massa",
+        "Zawiyat Al Qusour"
+      ],
+      "Tobruk": [
+        "Tobruk City",
+        "Al Jaghbub",
+        "Al Burdi"
+      ],
+      "Sabha": [
+        "Sabha Central",
+        "Al Mahdiyya",
+        "Al Gurda",
+        "Sukrah"
+      ]
+    }
+  },
+  "MA": {
+    "admin1_label": "Region",
+    "admin2_label": "Province / Prefecture",
+    "cities": {
+      "Casablanca": [
+        "Ma\u00e2rif",
+        "Anfa",
+        "Sidi Belyout",
+        "Hay Hassani",
+        "A\u00efn Seba\u00e2",
+        "Sidi Bernoussi",
+        "Mers Sultan"
+      ],
+      "Rabat": [
+        "Agdal-Ryad",
+        "Hassan",
+        "Yacoub El Mansour",
+        "Souissi",
+        "Touarga"
+      ],
+      "F\u00e8s": [
+        "F\u00e8s-M\u00e9dina",
+        "F\u00e8s-Jdid",
+        "Sa\u00efss",
+        "Jnane El Ouard",
+        "Zouagha"
+      ],
+      "Marrakech": [
+        "M\u00e9dina",
+        "Gu\u00e9liz",
+        "M\u00e9nara",
+        "Sidi Youssef Ben Ali",
+        "Ennakhil"
+      ],
+      "Tangier": [
+        "Tanger-M\u00e9dina",
+        "Beni Makada",
+        "Charf-Mghogha",
+        "Charf-Souani"
+      ],
+      "Agadir": [
+        "Agadir Centre",
+        "Anza",
+        "Bensergao",
+        "Tikiouine"
+      ],
+      "Mekn\u00e8s": [
+        "Mekn\u00e8s-M\u00e9dina",
+        "Hamriya",
+        "Al Isma\u00eflia",
+        "Ouislane"
+      ],
+      "Oujda": [
+        "Oujda Centre",
+        "Sidi Ziane",
+        "Al Qods",
+        "Al Hikma"
+      ]
+    }
+  },
+  "SD": {
+    "admin1_label": "State (Wilayah)",
+    "admin2_label": "Locality (Mahaliyah)",
+    "cities": {
+      "Khartoum": [
+        "Khartoum Central",
+        "Omdurman",
+        "Khartoum North (Bahri)",
+        "Jebel Aulia",
+        "Sharq an-Nil"
+      ],
+      "Port Sudan (Red Sea)": [
+        "Port Sudan Central",
+        "Suakin",
+        "Sinkat",
+        "Tokar"
+      ],
+      "Kassala": [
+        "Kassala Locality",
+        "Halfa El Gadida",
+        "Rural Kassala"
+      ],
+      "Gedaref": [
+        "Gedaref Municipality",
+        "Al Faw",
+        "Al Rahad",
+        "Al Quresha"
+      ],
+      "Gezira (Wad Madani)": [
+        "Wad Madani",
+        "Al Managil",
+        "Al Hasaheisa",
+        "Al Kamlin"
+      ],
+      "North Kordofan (El Obeid)": [
+        "Sheikan",
+        "Umm Ruwaba",
+        "Bara"
+      ],
+      "South Darfur (Nyala)": [
+        "Nyala North",
+        "Nyala South",
+        "Kas",
+        "Beliel"
+      ],
+      "North Darfur (El Fasher)": [
+        "El Fasher Locality",
+        "Kutum",
+        "Umm Kaddada"
+      ]
+    }
+  },
+  "TN": {
+    "admin1_label": "Governorate (Wilayah)",
+    "admin2_label": "Delegation (Mutamadiyah)",
+    "cities": {
+      "Tunis": [
+        "Tunis Medina",
+        "El Menzah",
+        "Carthage",
+        "La Marsa",
+        "Sidi Bou Said",
+        "Le Bardo"
+      ],
+      "Sfax": [
+        "Sfax Ville",
+        "Sfax Ouest",
+        "Sakiet Ezzit",
+        "Sakiet Edda\u00efer",
+        "Thyna"
+      ],
+      "Sousse": [
+        "Sousse Ville",
+        "Sousse Jawhara",
+        "Hammam Sousse",
+        "Kalaa Kebira"
+      ],
+      "Kairouan": [
+        "Kairouan Nord",
+        "Kairouan Sud",
+        "Bou Hajla",
+        "Sbikha"
+      ],
+      "Bizerte": [
+        "Bizerte Nord",
+        "Bizerte Sud",
+        "Menzel Bourguiba",
+        "Mateur"
+      ],
+      "Gab\u00e8s": [
+        "Gab\u00e8s Ville",
+        "Gab\u00e8s Ouest",
+        "El Hamma",
+        "Mareth"
+      ],
+      "Nabeul": [
+        "Nabeul City",
+        "Hammamet",
+        "Korba",
+        "Kelibia",
+        "Dar Chaabane"
+      ]
+    }
+  },
+  "ET": {
+    "admin1_label": "Regional State",
+    "admin2_label": "Zone / Sub-city",
+    "cities": {
+      "Addis Ababa": [
+        "Bole",
+        "Yeka",
+        "Kirkos",
+        "Arada",
+        "Lideta",
+        "Nifas Silk-Lafto",
+        "Kolfe Keranio",
+        "Gullele",
+        "Akaki Kality",
+        "Addis Ketema",
+        "Lemi Kura"
+      ],
+      "Oromia (Adama / Nazret)": [
+        "Adama Town",
+        "Bishoftu (Debre Zeyit)",
+        "Jimma",
+        "Shashamane",
+        "Nekemte",
+        "Asella",
+        "Ambo",
+        "Bale Robe",
+        "Waliso"
+      ],
+      "Amhara (Bahir Dar)": [
+        "Bahir Dar City",
+        "Gondar",
+        "Dessie",
+        "Debre Birhan",
+        "Debre Markos",
+        "Kombolcha",
+        "Woldiya"
+      ],
+      "Tigray (Mekelle)": [
+        "Mekelle City",
+        "Adigrat",
+        "Shire (Inda Selassie)",
+        "Axum",
+        "Adwa",
+        "Alamata"
+      ],
+      "Sidama (Hawassa)": [
+        "Hawassa City",
+        "Yirgalem",
+        "Aleta Wondo",
+        "Hula",
+        "Bensa"
+      ],
+      "Dire Dawa": [
+        "Dire Dawa Town",
+        "Gurgura",
+        "Sabian",
+        "B-Center",
+        "Shinile Border"
+      ],
+      "Harari (Harar)": [
+        "Harar Jugol (Old City)",
+        "Amir Nur",
+        "Shenkor",
+        "Abadir",
+        "Hakim"
+      ],
+      "Somali (Jijiga)": [
+        "Jijiga Town",
+        "Gode",
+        "Degehabur",
+        "Kebri Dahar"
+      ],
+      "Afar (Semera)": [
+        "Semera",
+        "Asaita",
+        "Awash Sebat Kilo",
+        "Dubti"
+      ],
+      "Benishangul-Gumuz (Assosa)": [
+        "Assosa Town",
+        "Bambasi",
+        "Kamashi",
+        "Metekel"
+      ],
+      "Gambela (Gambela Town)": [
+        "Gambela Town",
+        "Itang",
+        "Abobo",
+        "Lare"
+      ],
+      "South Ethiopia (Arba Minch)": [
+        "Arba Minch Town",
+        "Sodo (Wolaita)",
+        "Dilla (Gedeo)",
+        "Jinka",
+        "Sawla"
+      ],
+      "Central Ethiopia (Hosaena)": [
+        "Hosaena",
+        "Butajira",
+        "Worabe",
+        "Durame"
+      ]
+    }
+  },
+  "KE": {
+    "admin1_label": "County",
+    "admin2_label": "Sub-County / Constituency",
+    "cities": {
+      "Nairobi": [
+        "Westlands",
+        "Dagoretti North",
+        "Dagoretti South",
+        "Lang'ata",
+        "Kibra",
+        "Roysambu",
+        "Kasarani",
+        "Ruaraka",
+        "Embakasi North",
+        "Embakasi South",
+        "Embakasi Central",
+        "Embakasi East",
+        "Embakasi West",
+        "Makadara",
+        "Kamukunji",
+        "Starehe",
+        "Mathare"
+      ],
+      "Mombasa": [
+        "Mvita (Island)",
+        "Nyali",
+        "Kisauni",
+        "Likoni",
+        "Changamwe",
+        "Jomvu"
+      ],
+      "Nakuru": [
+        "Nakuru Town East",
+        "Nakuru Town West",
+        "Naivasha",
+        "Gilgil",
+        "Molo",
+        "Njoro",
+        "Rongai",
+        "Subukia"
+      ],
+      "Uasin Gishu (Eldoret)": [
+        "Ainabkoi",
+        "Kapseret",
+        "Kesses",
+        "Moiben",
+        "Soy",
+        "Turbo"
+      ],
+      "Kisumu": [
+        "Kisumu Central",
+        "Kisumu East",
+        "Kisumu West",
+        "Seme",
+        "Nyando",
+        "Muhoroni",
+        "Nyakach"
+      ],
+      "Kiambu": [
+        "Kiambu Town",
+        "Thika Town",
+        "Ruiru",
+        "Juja",
+        "Githunguri",
+        "Kikuyu",
+        "Limuru",
+        "Kabete"
+      ],
+      "Machakos": [
+        "Machakos Town",
+        "Mavoko (Athi River)",
+        "Kangundo",
+        "Matungulu",
+        "Yatta",
+        "Mwala"
+      ],
+      "Meru": [
+        "Imenti North",
+        "Imenti South",
+        "Imenti Central",
+        "Tigania East",
+        "Tigania West",
+        "Igembe South"
+      ],
+      "Trans Nzoia (Kitale)": [
+        "Kiminini",
+        "Saboti",
+        "Cherangany",
+        "Endebess",
+        "Kwanza"
+      ],
+      "Nandi (Kapsabet)": [
+        "Emgwen",
+        "Mosop",
+        "Aldai",
+        "Chesumei",
+        "Nandi Hills",
+        "Tindiret"
+      ],
+      "Kilifi": [
+        "Kilifi North",
+        "Kilifi South",
+        "Malindi",
+        "Magarini",
+        "Kaloleni",
+        "Rabai",
+        "Ganze"
+      ]
+    }
+  },
+  "NG": {
+    "admin1_label": "State",
+    "admin2_label": "Local Government Area (LGA)",
+    "cities": {
+      "Lagos": [
+        "Ikeja",
+        "Lagos Island",
+        "Lagos Mainland",
+        "Eti-Osa (Victoria Island/Lekki)",
+        "Surulere",
+        "Alimosho",
+        "Oshodi-Isolo",
+        "Kosofe",
+        "Ikorodu",
+        "Badagry",
+        "Epe",
+        "Ajeromi-Ifelodun"
+      ],
+      "Abuja (FCT)": [
+        "Abuja Municipal (AMAC)",
+        "Bwari",
+        "Gwagwalada",
+        "Kuje",
+        "Kwali",
+        "Abaji"
+      ],
+      "Kano": [
+        "Kano Municipal",
+        "Fagge",
+        "Dala",
+        "Gwale",
+        "Tarauni",
+        "Nassarawa",
+        "Kumbotso",
+        "Ungogo"
+      ],
+      "Oyo (Ibadan)": [
+        "Ibadan North",
+        "Ibadan South-West",
+        "Ibadan North-East",
+        "Ibadan North-West",
+        "Ibadan South-East",
+        "Akinyele",
+        "Egbeda",
+        "Ogbomosho North",
+        "Oyo East"
+      ],
+      "Rivers (Port Harcourt)": [
+        "Port Harcourt City",
+        "Obio-Akpor",
+        "Eleme",
+        "Ikwerre",
+        "Oyigbo",
+        "Okrika"
+      ],
+      "Kaduna": [
+        "Kaduna North",
+        "Kaduna South",
+        "Chikun",
+        "Igabi",
+        "Zaria",
+        "Sabon Gari"
+      ],
+      "Edo (Benin City)": [
+        "Oredo",
+        "Ikpoba-Okha",
+        "Egor",
+        "Ovia North-East",
+        "Uhunmwonde"
+      ],
+      "Enugu": [
+        "Enugu North",
+        "Enugu South",
+        "Enugu East",
+        "Nsukka",
+        "Udi"
+      ],
+      "Anambra (Awka / Onitsha)": [
+        "Awka South",
+        "Onitsha North",
+        "Onitsha South",
+        "Nnewi North",
+        "Idemili North"
+      ],
+      "Ogun (Abeokuta)": [
+        "Abeokuta South",
+        "Abeokuta North",
+        "Ado-Odo/Ota",
+        "Ijebu Ode",
+        "Sagamu"
+      ],
+      "Delta (Asaba / Warri)": [
+        "Oshimili South (Asaba)",
+        "Warri South",
+        "Uvwie",
+        "Sapele",
+        "Ughelli North"
+      ]
+    }
+  },
+  "GH": {
+    "admin1_label": "Region",
+    "admin2_label": "Metropolitan / Municipal / District Assembly (MMDA)",
+    "cities": {
+      "Greater Accra": [
+        "Accra Metropolitan",
+        "Tema Metropolitan",
+        "Ga East",
+        "Ga West",
+        "Ga South",
+        "Ayawaso West",
+        "La Dade-Kotopon",
+        "Adentan"
+      ],
+      "Ashanti (Kumasi)": [
+        "Kumasi Metropolitan",
+        "Asokwa",
+        "Oforikrom",
+        "Suame",
+        "Kwadaso",
+        "Obuasi Municipal",
+        "Ejisu"
+      ],
+      "Western (Sekondi-Takoradi)": [
+        "Sekondi-Takoradi Metropolitan",
+        "Effia-Kwesimintsim",
+        "Tarkwa-Nsuaem",
+        "Ahanta West"
+      ],
+      "Eastern (Koforidua)": [
+        "New Juaben South (Koforidua)",
+        "New Juaben North",
+        "Akuapem South",
+        "Birim Central (Akim Oda)"
+      ],
+      "Central (Cape Coast)": [
+        "Cape Coast Metropolitan",
+        "Komenda-Edina-Eguafo-Abirem (Elmina)",
+        "Mfantseman (Saltpond)",
+        "Awutu Senya East (Kasoa)"
+      ],
+      "Northern (Tamale)": [
+        "Tamale Metropolitan",
+        "Sagnarigu",
+        "Yendi Municipal",
+        "Savelugu"
+      ],
+      "Volta (Ho)": [
+        "Ho Municipal",
+        "Keta Municipal",
+        "Hohoe Municipal",
+        "Ketu South (Aflao)"
+      ],
+      "Bono (Sunyani)": [
+        "Sunyani Municipal",
+        "Berekum East",
+        "Dormaa Central"
+      ]
+    }
+  },
+  "ZA": {
+    "admin1_label": "Province",
+    "admin2_label": "District / Local Municipality",
+    "cities": {
+      "Gauteng (Johannesburg / Pretoria)": [
+        "City of Johannesburg (Soweto, Sandton, Randburg)",
+        "City of Tshwane (Pretoria, Centurion)",
+        "City of Ekurhuleni (East Rand)",
+        "Mogale City (Krugersdorp)",
+        "Sedibeng"
+      ],
+      "Western Cape (Cape Town)": [
+        "City of Cape Town (City Bowl, Bellville, Khayelitsha, Mitchells Plain)",
+        "Stellenbosch",
+        "Drakenstein (Paarl)",
+        "George",
+        "Mossel Bay"
+      ],
+      "KwaZulu-Natal (Durban)": [
+        "eThekwini (Durban, Umhlanga, Umlazi, Chatsworth)",
+        "Msunduzi (Pietermaritzburg)",
+        "uMhlathuze (Richards Bay)",
+        "Newcastle"
+      ],
+      "Eastern Cape (Gqeberha / East London)": [
+        "Nelson Mandela Bay (Port Elizabeth, Uitenhage)",
+        "Buffalo City (East London, King William's Town)",
+        "King Sabata Dalindyebo (Mthatha)"
+      ],
+      "Free State (Bloemfontein)": [
+        "Mangaung (Bloemfontein, Botshabelo)",
+        "Matjhabeng (Welkom)",
+        "Dihlabeng (Bethlehem)",
+        "Moqhaka (Kroonstad)"
+      ],
+      "Mpumalanga (Mbombela)": [
+        "City of Mbombela (Nelspruit)",
+        "Emalahleni (Witbank)",
+        "Govan Mbeki (Secunda)",
+        "Steve Tshwete (Middelburg)"
+      ],
+      "Limpopo (Polokwane)": [
+        "Polokwane Central",
+        "Thulamela (Thohoyandou)",
+        "Makhado (Louis Trichardt)",
+        "Greater Tzaneen"
+      ],
+      "North West (Rustenburg / Mahikeng)": [
+        "Rustenburg Local",
+        "Madibeng (Brits)",
+        "Mahikeng Local",
+        "Matlosana (Klerksdorp)"
+      ]
+    }
+  },
+  "UG": {
+    "admin1_label": "Region",
+    "admin2_label": "District",
+    "cities": {
+      "Central (Kampala)": [
+        "Kampala Central",
+        "Nakawa",
+        "Makindye",
+        "Kawempe",
+        "Rubaga",
+        "Wakiso (Entebbe, Kira)",
+        "Mukono"
+      ],
+      "Eastern (Jinja / Mbale)": [
+        "Jinja City",
+        "Mbale City",
+        "Soroti City",
+        "Tororo",
+        "Iganga"
+      ],
+      "Northern (Gulu / Lira)": [
+        "Gulu City",
+        "Lira City",
+        "Arua City",
+        "Kitgum"
+      ],
+      "Western (Mbarara)": [
+        "Mbarara City",
+        "Fort Portal City",
+        "Kasese",
+        "Hoima City",
+        "Kabale"
+      ]
+    }
+  },
+  "TZ": {
+    "admin1_label": "Region (Mkoa)",
+    "admin2_label": "District (Wilaya)",
+    "cities": {
+      "Dar es Salaam": [
+        "Ilala",
+        "Kinondoni",
+        "Temeke",
+        "Kigamboni",
+        "Ubungo"
+      ],
+      "Dodoma": [
+        "Dodoma Urban",
+        "Bahi",
+        "Chamwino",
+        "Kondoa"
+      ],
+      "Arusha": [
+        "Arusha City",
+        "Arusha District",
+        "Meru",
+        "Karatu",
+        "Monduli"
+      ],
+      "Kilimanjaro (Moshi)": [
+        "Moshi Urban",
+        "Moshi Rural",
+        "Hai",
+        "Rombo",
+        "Same"
+      ],
+      "Mwanza": [
+        "Nyamagana",
+        "Ilemela",
+        "Magu",
+        "Sengerema",
+        "Misungwi"
+      ],
+      "Mbeya": [
+        "Mbeya City",
+        "Mbarali",
+        "Rungwe (Tukuyu)",
+        "Kyela"
+      ],
+      "Morogoro": [
+        "Morogoro Urban",
+        "Kilosa",
+        "Mvomero",
+        "Kilombero",
+        "Ulanga"
+      ],
+      "Zanzibar (Mjini Magharibi)": [
+        "Mjini (Stone Town)",
+        "Magharibi A",
+        "Magharibi B",
+        "Kaskazini A"
+      ]
+    }
+  },
+  "RW": {
+    "admin1_label": "Province (Intara)",
+    "admin2_label": "District (Akarere)",
+    "cities": {
+      "Kigali City": [
+        "Nyarugenge",
+        "Gasabo",
+        "Kicukiro"
+      ],
+      "Northern Province (Musanze)": [
+        "Musanze (Ruhengeri)",
+        "Gicumbi",
+        "Burera",
+        "Rulindo",
+        "Gakenke"
+      ],
+      "Southern Province (Huye)": [
+        "Huye (Butare)",
+        "Muhanga (Gitarama)",
+        "Nyanza",
+        "Ruhango",
+        "Kamonyi",
+        "Nyamagabe",
+        "Nyaruguru",
+        "Gisagara"
+      ],
+      "Eastern Province (Rwamagana)": [
+        "Rwamagana",
+        "Bugesera",
+        "Kayonza",
+        "Gatsibo",
+        "Nyagatare",
+        "Kirehe",
+        "Ngoma"
+      ],
+      "Western Province (Rubavu)": [
+        "Rubavu (Gisenyi)",
+        "Rusizi (Cyangugu)",
+        "Karongi (Kibuye)",
+        "Rutsiro",
+        "Nyabihu",
+        "Ngororero",
+        "Nyamasheke"
+      ]
+    }
+  },
+  "BI": {
+    "admin1_label": "Province",
+    "admin2_label": "Commune",
+    "cities": {
+      "Bujumbura (Economic Capital)": [
+        "Mukaza",
+        "Muha",
+        "Ntahangwa"
+      ],
+      "Gitega (Political Capital)": [
+        "Gitega Urban",
+        "Makebuko",
+        "Mutaho",
+        "Bugendana"
+      ],
+      "Ngozi": [
+        "Ngozi Commune",
+        "Mwumba",
+        "Kiremba"
+      ],
+      "Rumonge": [
+        "Rumonge Urban",
+        "Burambi",
+        "Buyengero"
+      ]
+    }
+  },
+  "CM": {
+    "admin1_label": "Region",
+    "admin2_label": "Department (D\u00e9partement)",
+    "cities": {
+      "Centre (Yaound\u00e9)": [
+        "Yaound\u00e9 I",
+        "Yaound\u00e9 II",
+        "Yaound\u00e9 III",
+        "Yaound\u00e9 IV",
+        "Yaound\u00e9 V",
+        "Yaound\u00e9 VI",
+        "Yaound\u00e9 VII"
+      ],
+      "Littoral (Douala)": [
+        "Douala I (Bonanjo)",
+        "Douala II (New Bell)",
+        "Douala III",
+        "Douala IV (Bonab\u00e9ri)",
+        "Douala V"
+      ],
+      "West (Bafoussam)": [
+        "Bafoussam I",
+        "Bafoussam II",
+        "Dschang",
+        "Foumban"
+      ],
+      "North-West (Bamenda)": [
+        "Bamenda I",
+        "Bamenda II",
+        "Bamenda III"
+      ],
+      "South-West (Buea / Limbe)": [
+        "Buea Central",
+        "Limbe I",
+        "Limbe II",
+        "Kumba I"
+      ],
+      "North (Garoua)": [
+        "Garoua I",
+        "Garoua II",
+        "Garoua III"
+      ],
+      "Far North (Maroua)": [
+        "Maroua I",
+        "Maroua II",
+        "Kouss\u00e9ri"
+      ]
+    }
+  },
+  "CI": {
+    "admin1_label": "District",
+    "admin2_label": "Region / Department",
+    "cities": {
+      "Abidjan Autonomous District": [
+        "Cocody",
+        "Plateau",
+        "Yopougon",
+        "Abobo",
+        "Marcory",
+        "Treichville",
+        "Koumassi",
+        "Port-Bou\u00ebt",
+        "Att\u00e9coub\u00e9",
+        "Adjam\u00e9"
+      ],
+      "Yamoussoukro Autonomous District": [
+        "Yamoussoukro Commune",
+        "Atti\u00e9gouakro"
+      ],
+      "Vall\u00e9e du Bandama (Bouak\u00e9)": [
+        "Bouak\u00e9-Ville",
+        "Katiola",
+        "B\u00e9oumi"
+      ],
+      "Bas-Sassandra (San-P\u00e9dro)": [
+        "San-P\u00e9dro Port",
+        "Sassandra",
+        "Soubr\u00e9"
+      ],
+      "Haut-Sassandra (Daloa)": [
+        "Daloa Central",
+        "Issia",
+        "Vavoua"
+      ],
+      "Savanes (Korhogo)": [
+        "Korhogo Central",
+        "Ferkess\u00e9dougou",
+        "Boundiali"
+      ]
+    }
+  },
+  "SN": {
+    "admin1_label": "Region",
+    "admin2_label": "Department",
+    "cities": {
+      "Dakar": [
+        "Dakar-Plateau",
+        "M\u00e9dina",
+        "Grand Dakar",
+        "Almadies",
+        "Parcelles Assainies",
+        "Pikine",
+        "Gu\u00e9diawaye",
+        "Rufisque"
+      ],
+      "Thi\u00e8s": [
+        "Thi\u00e8s Ville",
+        "Mbour",
+        "Saly Portudal",
+        "Tivaouane"
+      ],
+      "Saint-Louis": [
+        "Saint-Louis Commune",
+        "Dagana",
+        "Podor"
+      ],
+      "Diourbel (Touba)": [
+        "Touba Mosqu\u00e9e",
+        "Mback\u00e9",
+        "Diourbel Ville"
+      ],
+      "Ziguinchor (Casamance)": [
+        "Ziguinchor Commune",
+        "Bignona",
+        "Oussouye"
+      ],
+      "Kaolack": [
+        "Kaolack Commune",
+        "Nioro du Rip",
+        "Guinguin\u00e9o"
+      ]
+    }
+  },
+  "ZM": {
+    "admin1_label": "Province",
+    "admin2_label": "District",
+    "cities": {
+      "Lusaka": [
+        "Lusaka Central",
+        "Kafue",
+        "Chongwe",
+        "Chilanga"
+      ],
+      "Copperbelt (Ndola / Kitwe)": [
+        "Ndola Central",
+        "Kitwe Central",
+        "Chingola",
+        "Mufulira",
+        "Luanshya"
+      ],
+      "Southern (Livingstone / Choma)": [
+        "Livingstone City",
+        "Choma Central",
+        "Mazabuka",
+        "Monze"
+      ],
+      "Central (Kabwe)": [
+        "Kabwe Central",
+        "Kapiri Mposhi",
+        "Mkushi"
+      ],
+      "Eastern (Chipata)": [
+        "Chipata City",
+        "Petauke",
+        "Katete"
+      ]
+    }
+  },
+  "ZW": {
+    "admin1_label": "Province",
+    "admin2_label": "District",
+    "cities": {
+      "Harare Metropolitan": [
+        "Harare CBD",
+        "Chitungwiza",
+        "Epworth",
+        "Borrowdale",
+        "Highfield",
+        "Mbare",
+        "Avondale"
+      ],
+      "Bulawayo Metropolitan": [
+        "Bulawayo Central",
+        "Suburbs",
+        "Luveve",
+        "Nkulumane",
+        "Pumula"
+      ],
+      "Manicaland (Mutare)": [
+        "Mutare City",
+        "Rusape",
+        "Chipinge",
+        "Nyanga"
+      ],
+      "Midlands (Gweru / Kwekwe)": [
+        "Gweru Central",
+        "Kwekwe Central",
+        "Zvishavane",
+        "Gokwe"
+      ],
+      "Mashonaland West (Chinhoyi)": [
+        "Chinhoyi Town",
+        "Kadoma",
+        "Karoi",
+        "Norton"
+      ],
+      "Masvingo": [
+        "Masvingo City",
+        "Chiredzi",
+        "Zaka"
+      ]
+    }
+  },
+  "AO": {
+    "admin1_label": "Province",
+    "admin2_label": "Municipality (Munic\u00edpio)",
+    "cities": {
+      "Luanda": [
+        "Ingombota",
+        "Maianga",
+        "Viana",
+        "Cazenga",
+        "Belas",
+        "Talatona",
+        "Kilamba Kiaxi",
+        "Cacuaco"
+      ],
+      "Benguela": [
+        "Benguela City",
+        "Lobito",
+        "Ba\u00eda Farta",
+        "Catumbela"
+      ],
+      "Huambo": [
+        "Huambo City",
+        "Ca\u00e1la",
+        "Bailundo"
+      ],
+      "Hu\u00edla (Lubango)": [
+        "Lubango City",
+        "Humpata",
+        "Chibia",
+        "Matala"
+      ],
+      "Cabinda": [
+        "Cabinda City",
+        "Cacongo",
+        "Buco-Zau"
+      ]
+    }
+  },
+  "CD": {
+    "admin1_label": "Province",
+    "admin2_label": "City / Territory (Ville / Territoire)",
+    "cities": {
+      "Kinshasa": [
+        "Gombe",
+        "Kalamu",
+        "Limete",
+        "Ngaliema",
+        "Kintambo",
+        "Masina",
+        "N'djili",
+        "Lemba",
+        "Bandalungwa",
+        "Matete"
+      ],
+      "Haut-Katanga (Lubumbashi)": [
+        "Lubumbashi",
+        "Kampemba",
+        "Kenya",
+        "Ruashi",
+        "Likasi"
+      ],
+      "North Kivu (Goma)": [
+        "Goma City",
+        "Beni",
+        "Butembo"
+      ],
+      "South Kivu (Bukavu)": [
+        "Ibanda",
+        "Kadutu",
+        "Bagira",
+        "Uvira"
+      ],
+      "Tshopo (Kisangani)": [
+        "Makiso",
+        "Tshopo",
+        "Mangobo",
+        "Kabondo"
+      ],
+      "Kongo Central (Matadi)": [
+        "Matadi Port",
+        "Boma",
+        "Muanda"
+      ]
+    }
+  },
+  "MG": {
+    "admin1_label": "Region (Faritra)",
+    "admin2_label": "District (Distrika)",
+    "cities": {
+      "Analamanga (Antananarivo)": [
+        "Antananarivo-Renivohitra (1er au 6e Arrondissements)",
+        "Avaradrano",
+        "Atsimondrano",
+        "Ambohidratrimo"
+      ],
+      "Atsinanana (Toamasina)": [
+        "Toamasina I (Tamatave)",
+        "Toamasina II",
+        "Brickaville"
+      ],
+      "Vakinankaratra (Antsirabe)": [
+        "Antsirabe I",
+        "Antsirabe II",
+        "Betafo"
+      ],
+      "Boeny (Mahajanga)": [
+        "Mahajanga I",
+        "Mahajanga II",
+        "Marovoay"
+      ],
+      "Diana (Antsiranana)": [
+        "Antsiranana I (Diego-Suarez)",
+        "Nosy Be",
+        "Ambanja"
+      ]
+    }
+  },
+  "ML": {
+    "admin1_label": "Region",
+    "admin2_label": "Cercle",
+    "cities": {
+      "Bamako District": [
+        "Commune I",
+        "Commune II",
+        "Commune III",
+        "Commune IV",
+        "Commune V",
+        "Commune VI"
+      ],
+      "Sikasso": [
+        "Sikasso Cercle",
+        "Koutiala",
+        "Bougouni"
+      ],
+      "S\u00e9gou": [
+        "S\u00e9gou Cercle",
+        "Niono",
+        "San"
+      ],
+      "Mopti": [
+        "Mopti Cercle",
+        "Djenn\u00e9",
+        "Bandiagara"
+      ],
+      "Kayes": [
+        "Kayes Cercle",
+        "Kita",
+        "Bafoulab\u00e9"
+      ]
+    }
+  },
+  "BF": {
+    "admin1_label": "Region",
+    "admin2_label": "Province",
+    "cities": {
+      "Centre (Ouagadougou)": [
+        "Arrondissements 1 \u00e0 12 de Ouagadougou",
+        "Kadiogo"
+      ],
+      "Hauts-Bassins (Bobo-Dioulasso)": [
+        "Bobo-Dioulasso (Dafra, Konsa, Do)",
+        "Houet"
+      ],
+      "Centre-Ouest (Koudougou)": [
+        "Koudougou",
+        "Boulkiemd\u00e9"
+      ],
+      "Nord (Ouahigouya)": [
+        "Ouahigouya",
+        "Yatenga"
+      ]
+    }
+  },
+  "NE": {
+    "admin1_label": "Region",
+    "admin2_label": "Department",
+    "cities": {
+      "Niamey Capital District": [
+        "Niamey I",
+        "Niamey II",
+        "Niamey III",
+        "Niamey IV",
+        "Niamey V"
+      ],
+      "Maradi": [
+        "Maradi Ville",
+        "Madarounfa",
+        "Guidan Roumdji"
+      ],
+      "Zinder": [
+        "Zinder Ville",
+        "Mirriah",
+        "Magaria"
+      ],
+      "Tahoua": [
+        "Tahoua Ville",
+        "Madaoua",
+        "Birni N'Konni"
+      ],
+      "Agadez": [
+        "Agadez Commune",
+        "Arlit",
+        "Tchiroz\u00e9rine"
+      ]
+    }
+  },
+  "MW": {
+    "admin1_label": "Region",
+    "admin2_label": "District",
+    "cities": {
+      "Central Region (Lilongwe)": [
+        "Lilongwe City",
+        "Lilongwe Rural",
+        "Dedza",
+        "Kasungu",
+        "Salima"
+      ],
+      "Southern Region (Blantyre)": [
+        "Blantyre City",
+        "Zomba City",
+        "Mangochi",
+        "Thyolo",
+        "Mulanje"
+      ],
+      "Northern Region (Mzuzu)": [
+        "Mzuzu City",
+        "Mzimba",
+        "Karonga",
+        "Nkhata Bay"
+      ]
+    }
+  },
+  "MZ": {
+    "admin1_label": "Province",
+    "admin2_label": "District (Distrito)",
+    "cities": {
+      "Maputo Cidade": [
+        "KaMpfumo",
+        "Nlhamankulu",
+        "KaMaxakeni",
+        "KaMavota",
+        "KaMubukwana",
+        "KaTembe"
+      ],
+      "Maputo Prov\u00edncia": [
+        "Matola City",
+        "Boane",
+        "Marracuene",
+        "Manhi\u00e7a"
+      ],
+      "Sofala (Beira)": [
+        "Beira City",
+        "Dondo",
+        "B\u00fazi"
+      ],
+      "Nampula": [
+        "Nampula City",
+        "Nacala Port",
+        "Ilha de Mo\u00e7ambique"
+      ],
+      "Zamb\u00e9zia (Quelimane)": [
+        "Quelimane City",
+        "Mocuba",
+        "Guru\u00e9"
+      ]
+    }
+  },
+  "BJ": {
+    "admin1_label": "Department",
+    "admin2_label": "Commune",
+    "cities": {
+      "Littoral (Cotonou)": [
+        "1er au 13e Arrondissements de Cotonou"
+      ],
+      "Ou\u00e9m\u00e9 (Porto-Novo)": [
+        "Porto-Novo (1er au 5e Arrondissements)",
+        "S\u00e8m\u00e8-Kpodji"
+      ],
+      "Atlantique (Abomey-Calavi)": [
+        "Abomey-Calavi",
+        "Ouidah",
+        "Allada"
+      ],
+      "Borgou (Parakou)": [
+        "Parakou",
+        "Tchaourou",
+        "Bemb\u00e8r\u00e8k\u00e8"
+      ]
+    }
+  },
+  "TG": {
+    "admin1_label": "Region",
+    "admin2_label": "Prefecture",
+    "cities": {
+      "Maritime (Lom\u00e9)": [
+        "Lom\u00e9 (Golfe 1 \u00e0 7)",
+        "Ago\u00eb-Nyiv\u00e9",
+        "Ts\u00e9vi\u00e9"
+      ],
+      "Plateaux (Atakpam\u00e9)": [
+        "Atakpam\u00e9",
+        "Kpalim\u00e9",
+        "Badou"
+      ],
+      "Centrale (Sokod\u00e9)": [
+        "Sokod\u00e9",
+        "Tchamba"
+      ],
+      "Kara": [
+        "Kara Ville",
+        "Bassar",
+        "Niamtougou"
+      ]
+    }
+  },
+  "GN": {
+    "admin1_label": "Region",
+    "admin2_label": "Prefecture",
+    "cities": {
+      "Conakry Special Zone": [
+        "Kaloum",
+        "Dixinn",
+        "Matam",
+        "Ratoma",
+        "Matoto"
+      ],
+      "Kindia": [
+        "Kindia Centre",
+        "Coyah",
+        "Dubr\u00e9ka"
+      ],
+      "Kankan": [
+        "Kankan Centre",
+        "Siguiri",
+        "Mandiana"
+      ],
+      "Nz\u00e9r\u00e9kor\u00e9": [
+        "Nz\u00e9r\u00e9kor\u00e9 Centre",
+        "Macenta",
+        "Gu\u00e9ck\u00e9dou"
+      ]
+    }
+  },
+  "SL": {
+    "admin1_label": "Province / Area",
+    "admin2_label": "District",
+    "cities": {
+      "Western Area (Freetown)": [
+        "Freetown Urban (Central, East, West)",
+        "Western Area Rural (Waterloo, York)"
+      ],
+      "Northern Province (Makeni)": [
+        "Bombali (Makeni)",
+        "Port Loko"
+      ],
+      "Southern Province (Bo)": [
+        "Bo City",
+        "Moyamba",
+        "Pujehun"
+      ],
+      "Eastern Province (Kenema)": [
+        "Kenema City",
+        "Koidu (Kono)"
+      ]
+    }
+  },
+  "LR": {
+    "admin1_label": "County",
+    "admin2_label": "District",
+    "cities": {
+      "Montserrado (Monrovia)": [
+        "Greater Monrovia (Sinkor, Bushrod Island, Mamba Point)",
+        "Paynesville",
+        "Careysburg"
+      ],
+      "Nimba": [
+        "Ganta",
+        "Sanniquellie",
+        "Saclepea"
+      ],
+      "Bong": [
+        "Gbarnga",
+        "Suakoko",
+        "Salala"
+      ],
+      "Grand Bassa (Buchanan)": [
+        "Buchanan City",
+        "Owensgrove"
+      ]
+    }
+  },
+  "SO": {
+    "admin1_label": "Federal Member State",
+    "admin2_label": "Region / District",
+    "cities": {
+      "Banaadir (Mogadishu)": [
+        "Hamar Weyne",
+        "Hamar Jajab",
+        "Waberi",
+        "Hodan",
+        "Howlwadag",
+        "Yaqshid",
+        "Karan",
+        "Daynile"
+      ],
+      "Somaliland (Hargeisa)": [
+        "Hargeisa Central",
+        "Berbera Port",
+        "Burao"
+      ],
+      "Puntland (Garowe / Bosaso)": [
+        "Garowe City",
+        "Bosaso Port",
+        "Galkayo"
+      ],
+      "Jubaland (Kismayo)": [
+        "Kismayo City",
+        "Afmadow"
+      ],
+      "South West (Baidoa)": [
+        "Baidoa City",
+        "Wanlaweyn"
+      ]
+    }
+  },
+  "SS": {
+    "admin1_label": "State",
+    "admin2_label": "County",
+    "cities": {
+      "Central Equatoria (Juba)": [
+        "Juba City Council",
+        "Kator",
+        "Munuki",
+        "Rejaf",
+        "Yei County"
+      ],
+      "Western Bahr el Ghazal (Wau)": [
+        "Wau Town",
+        "Raja County"
+      ],
+      "Upper Nile (Malakal)": [
+        "Malakal Town",
+        "Renk County"
+      ],
+      "Eastern Equatoria (Torit)": [
+        "Torit Town",
+        "Kapoeta",
+        "Nimule"
+      ]
+    }
+  },
+  "TD": {
+    "admin1_label": "Province",
+    "admin2_label": "Department",
+    "cities": {
+      "N'Djamena City": [
+        "1er au 10e Arrondissements de N'Djamena"
+      ],
+      "Mayo-Kebbi Ouest (Pala)": [
+        "Pala",
+        "Mayo-Dallah"
+      ],
+      "Logone Occidental (Moundou)": [
+        "Moundou Ville",
+        "Lac Wey"
+      ],
+      "Ouadda\u00ef (Ab\u00e9ch\u00e9)": [
+        "Ab\u00e9ch\u00e9 Ville",
+        "Ouara"
+      ]
+    }
+  },
+  "CF": {
+    "admin1_label": "Prefecture",
+    "admin2_label": "Sub-Prefecture",
+    "cities": {
+      "Bangui Autonomous Commune": [
+        "1er au 8e Arrondissements de Bangui",
+        "Bimbo",
+        "B\u00e9goua"
+      ],
+      "Ouham-Pend\u00e9": [
+        "Bocaranga",
+        "Bozoum"
+      ],
+      "Mamb\u00e9r\u00e9-Kad\u00e9\u00ef (Berb\u00e9rati)": [
+        "Berb\u00e9rati",
+        "Carnot"
+      ]
+    }
+  },
+  "CG": {
+    "admin1_label": "Department",
+    "admin2_label": "District / Commune",
+    "cities": {
+      "Brazzaville": [
+        "Bacongo",
+        "Makelekele",
+        "Poto-Poto",
+        "Moungali",
+        "Ouenz\u00e9",
+        "Talanga\u00ef",
+        "Mfilou",
+        "Madibou",
+        "Djiri"
+      ],
+      "Pointe-Noire": [
+        "Lumumba",
+        "Mvoumvou",
+        "Ti\u00e9-Ti\u00e9",
+        "Loandjili",
+        "Mongo-Mpoukou",
+        "Ngoyo"
+      ],
+      "Niari (Dolisie)": [
+        "Dolisie Central",
+        "Mossendjo"
+      ]
+    }
+  },
+  "GA": {
+    "admin1_label": "Province",
+    "admin2_label": "Department",
+    "cities": {
+      "Estuaire (Libreville)": [
+        "1er au 6e Arrondissements de Libreville",
+        "Owendo",
+        "Akanda",
+        "Ntoum"
+      ],
+      "Ogoou\u00e9-Maritime (Port-Gentil)": [
+        "1er au 4e Arrondissements de Port-Gentil"
+      ],
+      "Haut-Ogoou\u00e9 (Franceville)": [
+        "Franceville",
+        "Moanda"
+      ]
+    }
+  },
+  "GQ": {
+    "admin1_label": "Province",
+    "admin2_label": "District",
+    "cities": {
+      "Bioko Norte (Malabo)": [
+        "Malabo Centro",
+        "Baney"
+      ],
+      "Litoral (Bata)": [
+        "Bata Centro",
+        "Mbini"
+      ],
+      "Wele-Nzas (Mongomo / Ciudad de la Paz)": [
+        "Mongomo",
+        "Oyala (Ciudad de la Paz)"
+      ]
+    }
+  },
+  "NA": {
+    "admin1_label": "Region",
+    "admin2_label": "Constituency",
+    "cities": {
+      "Khomas (Windhoek)": [
+        "Windhoek Central",
+        "Katutura Central",
+        "Katutura East",
+        "Khomasdal",
+        "Klein Windhoek"
+      ],
+      "Erongo (Swakopmund / Walvis Bay)": [
+        "Swakopmund",
+        "Walvis Bay Urban",
+        "Walvis Bay Rural"
+      ],
+      "Oshana (Oshakati)": [
+        "Oshakati East",
+        "Oshakati West",
+        "Ongwediva"
+      ]
+    }
+  },
+  "BW": {
+    "admin1_label": "District",
+    "admin2_label": "Sub-District",
+    "cities": {
+      "South-East (Gaborone)": [
+        "Gaborone Central",
+        "Broadhurst",
+        "Tlokweng",
+        "Ramotswa"
+      ],
+      "North-East (Francistown)": [
+        "Francistown Central",
+        "Monarch",
+        "Tatitown"
+      ],
+      "North-West (Maun)": [
+        "Maun Admin",
+        "Okavango Delta Gateway"
+      ]
+    }
+  },
+  "SZ": {
+    "admin1_label": "Region",
+    "admin2_label": "Tinkhundla",
+    "cities": {
+      "Hhohho (Mbabane)": [
+        "Mbabane Central",
+        "Mbabane East",
+        "Mbabane West"
+      ],
+      "Manzini": [
+        "Manzini Central",
+        "Matsapha Industrial",
+        "Kwaluseni"
+      ]
+    }
+  },
+  "LS": {
+    "admin1_label": "District",
+    "admin2_label": "Constituency",
+    "cities": {
+      "Maseru": [
+        "Maseru Central",
+        "Stadium Area",
+        "Thetsane",
+        "Lithabaneng"
+      ],
+      "Leribe (Hlotse)": [
+        "Hlotse",
+        "Maputsoe Industrial"
+      ],
+      "Berea (Teyateyaneng)": [
+        "Teyateyaneng Central"
+      ]
+    }
+  },
+  "MR": {
+    "admin1_label": "Region (Wilaya)",
+    "admin2_label": "Moughata'a",
+    "cities": {
+      "Nouakchott Capital": [
+        "Tevragh-Zeina",
+        "Ksar",
+        "Sebkha",
+        "El Mina",
+        "Arafat",
+        "Dar-Naim",
+        "Toujounine"
+      ],
+      "Dakhlet Nouadhibou": [
+        "Nouadhibou Port",
+        "Chami"
+      ],
+      "Trarza (Rosso)": [
+        "Rosso Ville",
+        "Keur Macene"
+      ]
+    }
+  },
+  "GM": {
+    "admin1_label": "Division / Region",
+    "admin2_label": "District / Municipality",
+    "cities": {
+      "Banjul & Kanifing (Greater Banjul)": [
+        "Banjul City",
+        "Kanifing Municipal (Serekunda, Bakau)",
+        "Brikama (West Coast)"
+      ],
+      "Lower River": [
+        "Mansa Konko",
+        "Kiang Central"
+      ]
+    }
+  },
+  "GW": {
+    "admin1_label": "Region",
+    "admin2_label": "Sector",
+    "cities": {
+      "Bissau Autonomous Sector": [
+        "Bissau Centro",
+        "Bandim",
+        "B\u00f4r",
+        "Bissalanca"
+      ],
+      "Bafat\u00e1": [
+        "Bafat\u00e1 Sector",
+        "Contuboel"
+      ],
+      "Gab\u00fa": [
+        "Gab\u00fa Sector",
+        "Pitche"
+      ]
+    }
+  },
+  "CV": {
+    "admin1_label": "Municipality (Concelho)",
+    "admin2_label": "Freguesia",
+    "cities": {
+      "Praia (Santiago Island)": [
+        "Praia Centro (Plat\u00f4)",
+        "Achada Santo Ant\u00f3nio",
+        "Palmarejo"
+      ],
+      "S\u00e3o Vicente (Mindelo)": [
+        "Mindelo Centro",
+        "Monte Sossego",
+        "Ribeira Bote"
+      ],
+      "Sal (Espargos / Santa Maria)": [
+        "Espargos",
+        "Santa Maria"
+      ]
+    }
+  },
+  "ST": {
+    "admin1_label": "District",
+    "admin2_label": "Locality",
+    "cities": {
+      "\u00c1gua Grande (S\u00e3o Tom\u00e9)": [
+        "S\u00e3o Tom\u00e9 Central",
+        "Pantufo",
+        "Madre Deus"
+      ],
+      "M\u00e9-Z\u00f3chi (Trindade)": [
+        "Trindade",
+        "Batep\u00e1"
+      ],
+      "Pr\u00edncipe Autonomous Region": [
+        "Santo Ant\u00f3nio"
+      ]
+    }
+  },
+  "KM": {
+    "admin1_label": "Autonomous Island",
+    "admin2_label": "Prefecture",
+    "cities": {
+      "Grande Comore (Moroni)": [
+        "Moroni Central",
+        "Mitsamiouli",
+        "Foumbouni"
+      ],
+      "Anjouan (Mutsamudu)": [
+        "Mutsamudu",
+        "Domoni"
+      ],
+      "Moh\u00e9li (Fomboni)": [
+        "Fomboni",
+        "Nioumachoua"
+      ]
+    }
+  },
+  "MU": {
+    "admin1_label": "District",
+    "admin2_label": "Municipality / Village Council",
+    "cities": {
+      "Port Louis": [
+        "Port Louis Central",
+        "Plaine Verte",
+        "Cassis"
+      ],
+      "Plaines Wilhems": [
+        "Curepipe",
+        "Vacoas-Phoenix",
+        "Quatre Bornes",
+        "Beau Bassin-Rose Hill"
+      ],
+      "Pamplemousses": [
+        "Triolet",
+        "Grand Baie Gateway"
+      ]
+    }
+  },
+  "SC": {
+    "admin1_label": "District",
+    "admin2_label": "Sub-district",
+    "cities": {
+      "Mah\u00e9 (Victoria)": [
+        "Victoria Central (English River, Saint Louis)",
+        "Mont Fleuri",
+        "Beau Vallon",
+        "Anse Royale"
+      ],
+      "Praslin": [
+        "Baie Sainte Anne",
+        "Grand' Anse Praslin"
+      ],
+      "La Digue": [
+        "La Passe"
+      ]
+    }
+  },
+  "DJ": {
+    "admin1_label": "Region",
+    "admin2_label": "District / Arrondissement",
+    "cities": {
+      "Djibouti City": [
+        "1er au 5e Arrondissements de Djibouti (Balbala, Boulaos)"
+      ],
+      "Ali Sabieh": [
+        "Ali Sabieh City"
+      ],
+      "Dikhil": [
+        "Dikhil City"
+      ],
+      "Tadjourah": [
+        "Tadjourah Port"
+      ]
+    }
+  },
+  "ER": {
+    "admin1_label": "Region (Zoba)",
+    "admin2_label": "Sub-Region",
+    "cities": {
+      "Maekel (Asmara)": [
+        "Asmara Central",
+        "Godadif",
+        "Tiravolo",
+        "Sembel"
+      ],
+      "Debub (Mendefera)": [
+        "Mendefera",
+        "Dekemhare",
+        "Senafe"
+      ],
+      "Semienawi Keyih Bahri (Massawa)": [
+        "Massawa Port",
+        "Ginda"
+      ],
+      "Gash-Barka (Barentu)": [
+        "Barentu",
+        "Teseney",
+        "Akordet"
+      ]
+    }
+  }
+}
