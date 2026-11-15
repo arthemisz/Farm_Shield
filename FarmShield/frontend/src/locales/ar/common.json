@@ -1,0 +1,29 @@
+{
+  "common": {
+    "appName": "فارم شيلد (FarmShield)",
+    "tagline": "زراعة أذكى. محاصيل أقوى. مستقبل مرن.",
+    "globalPlatform": "منصة عالمية للذكاء الزراعي، تبدأ من إثيوبيا.",
+    "demoData": "بيانات تجريبية",
+    "loading": "جاري التحميل...",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "filter": "تصفية",
+    "search": "بحث",
+    "actions": "إجراءات",
+    "activeCountry": "البلد النشط"
+  },
+  "nav": {
+    "dashboard": "لوحة المعلومات",
+    "myFarms": "مزارعي",
+    "climate": "معلومات المناخ",
+    "soil": "معلومات التربة",
+    "cropDatabase": "قاعدة بيانات المحاصيل",
+    "rotationPlanner": "مخطط الدورة الزراعية",
+    "interactiveMap": "الخريطة التفاعلية",
+    "reports": "التقارير",
+    "settings": "الإعدادات"
+  }
+}
+
