@@ -1,0 +1,326 @@
+{
+  "DZ": {
+    "filename": "dz.png",
+    "path": "/country_images/dz.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Algeria_Topography.png/960px-Algeria_Topography.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Algeria"
+  },
+  "EG": {
+    "filename": "eg.jpg",
+    "path": "/country_images/eg.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Egypt_relief_location_map.jpg/960px-Egypt_relief_location_map.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Egypt"
+  },
+  "LY": {
+    "filename": "ly.png",
+    "path": "/country_images/ly.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/LocationLibya.svg/960px-LocationLibya.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Libya"
+  },
+  "MA": {
+    "filename": "ma.png",
+    "path": "/country_images/ma.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/LocationMorocco.svg/960px-LocationMorocco.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Morocco"
+  },
+  "TN": {
+    "filename": "tn.png",
+    "path": "/country_images/tn.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/LocationTunisia.svg/960px-LocationTunisia.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Tunisia"
+  },
+  "BI": {
+    "filename": "bi.png",
+    "path": "/country_images/bi.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/03/Burundi_map_OMC.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Burundi"
+  },
+  "KM": {
+    "filename": "km.png",
+    "path": "/country_images/km.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Flag_of_the_Comoros.svg/960px-Flag_of_the_Comoros.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Comoros"
+  },
+  "DJ": {
+    "filename": "dj.png",
+    "path": "/country_images/dj.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/The_geography_of_the_Republic_of_Djibouti.png/960px-The_geography_of_the_Republic_of_Djibouti.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Djibouti"
+  },
+  "ER": {
+    "filename": "er.jpg",
+    "path": "/country_images/er.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Massicci_nei_dintorni_di_senaf%C3%A9%2C_15.JPG/960px-Massicci_nei_dintorni_di_senaf%C3%A9%2C_15.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Eritrea"
+  },
+  "ET": {
+    "filename": "et.jpg",
+    "path": "/country_images/et.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Formazioni_rocciose_nei_dintorni_di_addis_zemen%2C_05.jpg/960px-Formazioni_rocciose_nei_dintorni_di_addis_zemen%2C_05.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Ethiopia"
+  },
+  "KE": {
+    "filename": "ke.png",
+    "path": "/country_images/ke.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kenya_sat.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Kenya"
+  },
+  "MG": {
+    "filename": "mg.jpg",
+    "path": "/country_images/mg.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Satellite_image_of_Madagascar_in_September_2003.jpg/960px-Satellite_image_of_Madagascar_in_September_2003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Madagascar"
+  },
+  "MW": {
+    "filename": "mw.png",
+    "path": "/country_images/mw.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/LocationMalawi.svg/960px-LocationMalawi.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Malawi"
+  },
+  "MU": {
+    "filename": "mu.png",
+    "path": "/country_images/mu.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Mauritius_island_location.svg/960px-Mauritius_island_location.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Mauritius"
+  },
+  "MZ": {
+    "filename": "mz.jpg",
+    "path": "/country_images/mz.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Satellite_image_of_Mozambique_in_September_2002.jpg/960px-Satellite_image_of_Mozambique_in_September_2002.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Mozambique"
+  },
+  "RW": {
+    "filename": "rw.png",
+    "path": "/country_images/rw.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Rwanda_sat.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Rwanda"
+  },
+  "SC": {
+    "filename": "sc.png",
+    "path": "/country_images/sc.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Seychelles_in_its_region_%28small_islands_magnified%29.svg/960px-Seychelles_in_its_region_%28small_islands_magnified%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Seychelles"
+  },
+  "SO": {
+    "filename": "so.png",
+    "path": "/country_images/so.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/cd/MapofSomalia.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Somalia"
+  },
+  "SS": {
+    "filename": "ss.png",
+    "path": "/country_images/ss.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/SouthSudanOMC.png/960px-SouthSudanOMC.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of South Sudan"
+  },
+  "TZ": {
+    "filename": "tz.jpg",
+    "path": "/country_images/tz.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Tanzania_sat.JPG/960px-Tanzania_sat.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Tanzania"
+  },
+  "UG": {
+    "filename": "ug.png",
+    "path": "/country_images/ug.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Un-uganda.png/960px-Un-uganda.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Uganda"
+  },
+  "ZM": {
+    "filename": "zm.png",
+    "path": "/country_images/zm.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/a/af/Za-map.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Zambia"
+  },
+  "ZW": {
+    "filename": "zw.png",
+    "path": "/country_images/zw.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Zi-map.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Zimbabwe"
+  },
+  "BJ": {
+    "filename": "bj.png",
+    "path": "/country_images/bj.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Benin_in_its_region.svg/960px-Benin_in_its_region.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Benin"
+  },
+  "BF": {
+    "filename": "bf.jpg",
+    "path": "/country_images/bf.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Burkina_Faso_Map.jpg/960px-Burkina_Faso_Map.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Burkina Faso"
+  },
+  "GH": {
+    "filename": "gh.jpg",
+    "path": "/country_images/gh.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Ghana_Map.jpg/960px-Ghana_Map.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Ghana"
+  },
+  "GN": {
+    "filename": "gn.png",
+    "path": "/country_images/gn.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Un-guinea.png/960px-Un-guinea.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Guinea"
+  },
+  "GW": {
+    "filename": "gw.png",
+    "path": "/country_images/gw.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Un-guinea-bissau.png/960px-Un-guinea-bissau.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Guinea-Bissau"
+  },
+  "LR": {
+    "filename": "lr.jpg",
+    "path": "/country_images/lr.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Satellite_image_of_Liberia_in_January_2003.jpg/960px-Satellite_image_of_Liberia_in_January_2003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Liberia"
+  },
+  "ML": {
+    "filename": "ml.png",
+    "path": "/country_images/ml.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Un-mali.png/960px-Un-mali.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Mali"
+  },
+  "MR": {
+    "filename": "mr.png",
+    "path": "/country_images/mr.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/LocationMauritania.svg/960px-LocationMauritania.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Mauritania"
+  },
+  "NE": {
+    "filename": "ne.png",
+    "path": "/country_images/ne.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/3/32/Niger_sm03.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Niger"
+  },
+  "NG": {
+    "filename": "ng.png",
+    "path": "/country_images/ng.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Nigeria_BMNG.png/960px-Nigeria_BMNG.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Nigeria"
+  },
+  "SN": {
+    "filename": "sn.png",
+    "path": "/country_images/sn.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Sg-map.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Senegal"
+  },
+  "SL": {
+    "filename": "sl.jpg",
+    "path": "/country_images/sl.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Satellite_image_of_Sierra_Leone_in_February_2003.jpg/960px-Satellite_image_of_Sierra_Leone_in_February_2003.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Sierra Leone"
+  },
+  "TG": {
+    "filename": "tg.png",
+    "path": "/country_images/tg.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/LocationTogo.svg/960px-LocationTogo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Togo"
+  },
+  "CM": {
+    "filename": "cm.jpg",
+    "path": "/country_images/cm.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Cameroon_Map.jpg/960px-Cameroon_Map.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Cameroon"
+  },
+  "CF": {
+    "filename": "cf.png",
+    "path": "/country_images/cf.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Central_African_Republic.svg/960px-Flag_of_the_Central_African_Republic.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Central African Republic"
+  },
+  "TD": {
+    "filename": "td.png",
+    "path": "/country_images/td.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Un-chad.png/960px-Un-chad.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Chad"
+  },
+  "CG": {
+    "filename": "cg.png",
+    "path": "/country_images/cg.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_the_Republic_of_the_Congo.svg/960px-Flag_of_the_Republic_of_the_Congo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Republic of the Congo"
+  },
+  "CD": {
+    "filename": "cd.png",
+    "path": "/country_images/cd.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_the_Democratic_Republic_of_the_Congo.svg/960px-Flag_of_the_Democratic_Republic_of_the_Congo.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Democratic Republic of the Congo"
+  },
+  "GQ": {
+    "filename": "gq.png",
+    "path": "/country_images/gq.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Equatorial_Guinea_Map.png/960px-Equatorial_Guinea_Map.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Equatorial Guinea"
+  },
+  "GA": {
+    "filename": "ga.png",
+    "path": "/country_images/ga.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Topographic_map_of_Gabon-en.svg/960px-Topographic_map_of_Gabon-en.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Gabon"
+  },
+  "AO": {
+    "filename": "ao.png",
+    "path": "/country_images/ao.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/LocationAngola.svg/960px-LocationAngola.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Angola"
+  },
+  "BW": {
+    "filename": "bw.jpg",
+    "path": "/country_images/bw.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Botswana_Map.jpg/960px-Botswana_Map.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Botswana"
+  },
+  "SZ": {
+    "filename": "sz.png",
+    "path": "/country_images/sz.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/f/f2/EswatiniOMC.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Eswatini"
+  },
+  "LS": {
+    "filename": "ls.png",
+    "path": "/country_images/ls.png",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Lesotho_sat.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "caption": "Geographic landscape & territory of Lesotho"
+  },
+  "NA": {
+    "filename": "na.jpg",
+    "path": "/country_images/na.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Namibia_relief_location_map.jpg/960px-Namibia_relief_location_map.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Namibia"
+  },
+  "ZA": {
+    "filename": "za.png",
+    "path": "/country_images/za.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Map_of_South_Africa.svg/960px-Map_of_South_Africa.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of South Africa"
+  },
+  "SD": {
+    "filename": "sd.jpg",
+    "path": "/country_images/sd.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/%C2%A9Nile-Project_-Sari_Omer_0025.jpg/960px-%C2%A9Nile-Project_-Sari_Omer_0025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Sudan"
+  },
+  "CV": {
+    "filename": "cv.png",
+    "path": "/country_images/cv.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Flag_of_Cape_Verde_%283-2%29.svg/960px-Flag_of_Cape_Verde_%283-2%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Cabo Verde"
+  },
+  "CI": {
+    "filename": "ci.png",
+    "path": "/country_images/ci.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_C%C3%B4te_d%27Ivoire.svg/960px-Flag_of_C%C3%B4te_d%27Ivoire.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of C\u00f4te d'Ivoire"
+  },
+  "GM": {
+    "filename": "gm.png",
+    "path": "/country_images/gm.png",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_The_Gambia.svg/960px-Flag_of_The_Gambia.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Geographic landscape & territory of Gambia"
+  },
+  "ST": {
+    "filename": "st.jpg",
+    "path": "/country_images/st.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Pico_C%C3%A3o_Grande.jpg/960px-Pico_C%C3%A3o_Grande.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "caption": "Pico C\u00e3o Grande needle-shaped volcanic plug peak in S\u00e3o Tom\u00e9 and Pr\u00edncipe"
+  }
+}
