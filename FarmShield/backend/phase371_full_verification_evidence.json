@@ -1,0 +1,627 @@
+{
+  "ET": {
+    "country": "Ethiopia",
+    "coordinates": [
+      8.75,
+      38.98
+    ],
+    "nasaPower": {
+      "status": "CACHED",
+      "dataset": null,
+      "summary": {
+        "annualRainfallMm": 1646.0,
+        "avgTempC": 16.4,
+        "minTempC": 2.5,
+        "maxTempC": 30.0,
+        "rainyDaysEstimated": 143,
+        "droughtRiskScore": "Low",
+        "solarRadiationAvgMj": 19.5
+      },
+      "annualPrecipitationMm": null,
+      "meanTemperatureCelsius": null,
+      "monthsCount": 12,
+      "firstMonthSample": {
+        "month": "Jan",
+        "rainfallMm": 18.0,
+        "tempMeanC": 16.8,
+        "tempMinC": 6.6,
+        "tempMaxC": 26.5,
+        "solarRadiationMj": 21.88
+      },
+      "isDemoData": false
+    },
+    "chirps": {
+      "status": "CACHED",
+      "dataset": "CHIRPS 2.0 (Climate Hazards Center InfraRed Precipitation with Station data)",
+      "totalRainfallMm": 1174.9,
+      "anomalyPercentage": 5.0,
+      "seasonalSummary": {
+        "season1": {
+          "name": "Long Rains (MAM - Belg/Kiremt start)",
+          "months": "March - May",
+          "observedMm": 372.8,
+          "baselineMm": 355,
+          "anomalyPercentage": 5.0
+        },
+        "season2": {
+          "name": "Short Rains (OND - Deyr/Meher)",
+          "months": "October - December",
+          "observedMm": 123.9,
+          "baselineMm": 118,
+          "anomalyPercentage": 5.0
+        }
+      },
+      "dataQuality": {
+        "completenessPercentage": 100.0,
+        "missingDaysReported": 0,
+        "missingDataStrategy": "Interpolation against 30-year CHIRPS regional baseline",
+        "spatialResolution": "0.05\u00b0 (~5.3 km CHIRPS grid)",
+        "observationFrequency": "Daily aggregated to monthly"
+      },
+      "isDemoData": true
+    },
+    "soilGrids": {
+      "status": "CACHED",
+      "dataset": null,
+      "ph": 7.0,
+      "organicCarbon": null,
+      "texture": null,
+      "depthsSampled": [
+        "0-5cm",
+        "5-15cm",
+        "15-30cm"
+      ],
+      "isDemoData": false
+    },
+    "sentinel2": {
+      "status": "PARTIAL",
+      "dataset": "Copernicus Sentinel-2 Level-2A (Bottom-of-Atmosphere Reflectance)",
+      "currentNdviIndex": null,
+      "ndviMedian": null,
+      "ndviStd": null,
+      "validPixelCount": null,
+      "vegetationCondition": "Undetermined - raster pixel reads not completed",
+      "satelliteObservation": {
+        "platform": "Sentinel-2A",
+        "sceneId": "S2A_MSIL2A_20261031T074021_R092_T37PDK_20261031T130510",
+        "observationDate": "2026-10-31T07:40:21.024000Z",
+        "cloudCover": 0.82,
+        "hasRedHref": true,
+        "hasNirHref": true
+      },
+      "rasterProcessingStatus": "PARTIAL - STAC scene identified; band HREFs resolved; pixel reads not completed. Error: PIXEL_EXTRACTION_FAILED. Full COG pixel streaming requires active Azure blob network access.",
+      "isDemoData": false
+    },
+    "faostat": {
+      "status": "CACHED",
+      "dataset": "FAOSTAT Crops and Livestock Products (QCL)",
+      "reportingYear": 2022,
+      "statistics": {
+        "teff": {
+          "cropName": "Cereals nes (includes Teff)",
+          "productionTonnes": 5740000,
+          "areaHarvestedHa": 3120000,
+          "yieldKgPerHa": 1840
+        }
+      },
+      "isDemoData": false
+    },
+    "cropCalendar": {
+      "status": "CACHED",
+      "institution": "Ethiopian Institute of Agricultural Research (EIAR) & FAO GIEWS",
+      "calendarAvailable": true,
+      "crops": {
+        "teff": {
+          "season": "Meher",
+          "plantingWindow": "July 10 - August 5",
+          "floweringPeriod": "September - October",
+          "harvestingWindow": "November - December",
+          "optimalRainfallMm": "450 - 650",
+          "optimalTempC": "15 - 27",
+          "criticalStages": "Tillering & heading (moisture stress sensitive)",
+          "source": "EIAR Teff Production Package (2020) & Debre Zeit Agricultural Research Center"
+        }
+      }
+    }
+  },
+  "KE": {
+    "country": "Kenya",
+    "coordinates": [
+      -0.3,
+      36.06
+    ],
+    "nasaPower": {
+      "status": "CACHED",
+      "dataset": null,
+      "summary": {
+        "annualRainfallMm": 2413.7,
+        "avgTempC": 15.4,
+        "minTempC": 6.2,
+        "maxTempC": 24.5,
+        "rainyDaysEstimated": 209,
+        "droughtRiskScore": "Low",
+        "solarRadiationAvgMj": 19.5
+      },
+      "annualPrecipitationMm": null,
+      "meanTemperatureCelsius": null,
+      "monthsCount": 12,
+      "firstMonthSample": {
+        "month": "Jan",
+        "rainfallMm": 204.3,
+        "tempMeanC": 15.6,
+        "tempMinC": 9.1,
+        "tempMaxC": 22.5,
+        "solarRadiationMj": 19.79
+      },
+      "isDemoData": false
+    },
+    "chirps": {
+      "status": "CACHED",
+      "dataset": "CHIRPS 2.0 (Climate Hazards Center InfraRed Precipitation with Station data)",
+      "totalRainfallMm": 2413.8,
+      "anomalyPercentage": 115.7,
+      "seasonalSummary": {
+        "season1": {
+          "name": "Long Rains (MAM - Belg/Kiremt start)",
+          "months": "March - May",
+          "observedMm": 1173.3,
+          "baselineMm": 355,
+          "anomalyPercentage": 230.5
+        },
+        "season2": {
+          "name": "Short Rains (OND - Deyr/Meher)",
+          "months": "October - December",
+          "observedMm": 547.7,
+          "baselineMm": 118,
+          "anomalyPercentage": 364.2
+        }
+      },
+      "dataQuality": {
+        "completenessPercentage": 100.0,
+        "missingDaysReported": 0,
+        "missingDataStrategy": "Interpolation against 30-year CHIRPS regional baseline",
+        "spatialResolution": "0.05\u00b0 (~5.3 km CHIRPS grid)",
+        "observationFrequency": "Daily aggregated to monthly"
+      },
+      "isDemoData": false
+    },
+    "soilGrids": {
+      "status": "CACHED",
+      "dataset": null,
+      "ph": 6.8,
+      "organicCarbon": null,
+      "texture": null,
+      "depthsSampled": [
+        "0-5cm",
+        "5-15cm",
+        "15-30cm"
+      ],
+      "isDemoData": false
+    },
+    "sentinel2": {
+      "status": "LIVE",
+      "dataset": "Copernicus Sentinel-2 Level-2A (Bottom-of-Atmosphere Reflectance)",
+      "currentNdviIndex": -0.0129,
+      "ndviMedian": 0.0056,
+      "ndviStd": 0.4638,
+      "validPixelCount": 624,
+      "vegetationCondition": "Water Body / Non-Vegetated Surface",
+      "satelliteObservation": {
+        "platform": "Sentinel-2B",
+        "sceneId": "S2B_MSIL2A_20261027T075019_R135_T36MZE_20261027T121506",
+        "observationDate": "2026-10-27T07:50:19.024000Z",
+        "cloudCover": 14.28,
+        "hasRedHref": true,
+        "hasNirHref": true
+      },
+      "rasterProcessingStatus": "LIVE - actual B04/B08 COG pixels sampled. 624 valid pixels used for NDVI computation.",
+      "isDemoData": false
+    },
+    "faostat": {
+      "status": "CACHED",
+      "dataset": "FAOSTAT Crops and Livestock Products (QCL)",
+      "reportingYear": 2022,
+      "statistics": {
+        "maize": {
+          "cropName": "Maize (corn)",
+          "productionTonnes": 3438000,
+          "areaHarvestedHa": 2185000,
+          "yieldKgPerHa": 1573
+        }
+      },
+      "isDemoData": false
+    },
+    "cropCalendar": {
+      "status": "CACHED",
+      "institution": "Kenya Agricultural and Livestock Research Organization (KALRO) & FAO",
+      "calendarAvailable": true,
+      "crops": {
+        "maize": {
+          "season": "Long Rains",
+          "plantingWindow": "March 15 - April 10",
+          "floweringPeriod": "May - June",
+          "harvestingWindow": "August - October",
+          "optimalRainfallMm": "600 - 1100",
+          "optimalTempC": "18 - 28",
+          "criticalStages": "Tasseling and grain filling",
+          "source": "KALRO Maize Production Guidelines & Ministry of Agriculture Kenya"
+        }
+      }
+    }
+  },
+  "NG": {
+    "country": "Nigeria",
+    "coordinates": [
+      7.37,
+      3.94
+    ],
+    "nasaPower": {
+      "status": "CACHED",
+      "dataset": null,
+      "summary": {
+        "annualRainfallMm": 1674.5,
+        "avgTempC": 25.7,
+        "minTempC": 14.1,
+        "maxTempC": 34.6,
+        "rainyDaysEstimated": 145,
+        "droughtRiskScore": "Low",
+        "solarRadiationAvgMj": 19.5
+      },
+      "annualPrecipitationMm": null,
+      "meanTemperatureCelsius": null,
+      "monthsCount": 12,
+      "firstMonthSample": {
+        "month": "Jan",
+        "rainfallMm": 2.2,
+        "tempMeanC": 25.1,
+        "tempMinC": 15.8,
+        "tempMaxC": 32.6,
+        "solarRadiationMj": 18.77
+      },
+      "isDemoData": false
+    },
+    "chirps": {
+      "status": "CACHED",
+      "dataset": "CHIRPS 2.0 (Climate Hazards Center InfraRed Precipitation with Station data)",
+      "totalRainfallMm": 1674.5,
+      "anomalyPercentage": 49.6,
+      "seasonalSummary": {
+        "season1": {
+          "name": "Long Rains (MAM - Belg/Kiremt start)",
+          "months": "March - May",
+          "observedMm": 327.2,
+          "baselineMm": 355,
+          "anomalyPercentage": -7.8
+        },
+        "season2": {
+          "name": "Short Rains (OND - Deyr/Meher)",
+          "months": "October - December",
+          "observedMm": 401.3,
+          "baselineMm": 118,
+          "anomalyPercentage": 240.1
+        }
+      },
+      "dataQuality": {
+        "completenessPercentage": 100.0,
+        "missingDaysReported": 0,
+        "missingDataStrategy": "Interpolation against 30-year CHIRPS regional baseline",
+        "spatialResolution": "0.05\u00b0 (~5.3 km CHIRPS grid)",
+        "observationFrequency": "Daily aggregated to monthly"
+      },
+      "isDemoData": false
+    },
+    "soilGrids": {
+      "status": "CACHED",
+      "dataset": null,
+      "ph": 6.8,
+      "organicCarbon": null,
+      "texture": null,
+      "depthsSampled": [
+        "0-5cm",
+        "5-15cm",
+        "15-30cm"
+      ],
+      "isDemoData": false
+    },
+    "sentinel2": {
+      "status": "UNAVAILABLE",
+      "dataset": "Copernicus Sentinel-2 Level-2A (Bottom-of-Atmosphere Reflectance)",
+      "currentNdviIndex": null,
+      "ndviMedian": null,
+      "ndviStd": null,
+      "validPixelCount": null,
+      "vegetationCondition": "No satellite data available",
+      "satelliteObservation": {
+        "platform": null,
+        "sceneId": null,
+        "observationDate": null,
+        "cloudCover": null,
+        "hasRedHref": false,
+        "hasNirHref": false
+      },
+      "rasterProcessingStatus": "UNAVAILABLE - no cloud-free Sentinel-2 scenes found in the search window, or no network connection to Planetary Computer STAC API.",
+      "isDemoData": false
+    },
+    "faostat": {
+      "status": "CACHED",
+      "dataset": "FAOSTAT Crops and Livestock Products (QCL)",
+      "reportingYear": 2022,
+      "statistics": {
+        "cassava": {
+          "cropName": "Cassava, fresh",
+          "productionTonnes": 60800000,
+          "areaHarvestedHa": 10200000,
+          "yieldKgPerHa": 5960
+        }
+      },
+      "isDemoData": false
+    },
+    "cropCalendar": {
+      "status": "CACHED",
+      "institution": "International Institute of Tropical Agriculture (IITA) & FMARD",
+      "calendarAvailable": true,
+      "crops": {
+        "cassava": {
+          "season": "Year-round (Main planting: March - May)",
+          "plantingWindow": "March 15 - May 15",
+          "floweringPeriod": "N/A (vegetative root crop)",
+          "harvestingWindow": "10 - 15 months post-planting",
+          "optimalRainfallMm": "1000 - 1500",
+          "optimalTempC": "25 - 35",
+          "criticalStages": "Root bulking (3 - 6 months)",
+          "source": "IITA Cassava Agronomy Guide (Ibadan) & NIHORT"
+        }
+      }
+    }
+  },
+  "GH": {
+    "country": "Ghana",
+    "coordinates": [
+      6.69,
+      -1.62
+    ],
+    "nasaPower": {
+      "status": "CACHED",
+      "dataset": null,
+      "summary": {
+        "annualRainfallMm": 1683.4,
+        "avgTempC": 25.9,
+        "minTempC": 15.3,
+        "maxTempC": 35.8,
+        "rainyDaysEstimated": 146,
+        "droughtRiskScore": "Low",
+        "solarRadiationAvgMj": 19.5
+      },
+      "annualPrecipitationMm": null,
+      "meanTemperatureCelsius": null,
+      "monthsCount": 12,
+      "firstMonthSample": {
+        "month": "Jan",
+        "rainfallMm": 33.5,
+        "tempMeanC": 25.9,
+        "tempMinC": 16.9,
+        "tempMaxC": 32.5,
+        "solarRadiationMj": 18.45
+      },
+      "isDemoData": false
+    },
+    "chirps": {
+      "status": "CACHED",
+      "dataset": "CHIRPS 2.0 (Climate Hazards Center InfraRed Precipitation with Station data)",
+      "totalRainfallMm": 1683.6,
+      "anomalyPercentage": 50.5,
+      "seasonalSummary": {
+        "season1": {
+          "name": "Long Rains (MAM - Belg/Kiremt start)",
+          "months": "March - May",
+          "observedMm": 526.3,
+          "baselineMm": 355,
+          "anomalyPercentage": 48.3
+        },
+        "season2": {
+          "name": "Short Rains (OND - Deyr/Meher)",
+          "months": "October - December",
+          "observedMm": 466.6,
+          "baselineMm": 118,
+          "anomalyPercentage": 295.4
+        }
+      },
+      "dataQuality": {
+        "completenessPercentage": 100.0,
+        "missingDaysReported": 0,
+        "missingDataStrategy": "Interpolation against 30-year CHIRPS regional baseline",
+        "spatialResolution": "0.05\u00b0 (~5.3 km CHIRPS grid)",
+        "observationFrequency": "Daily aggregated to monthly"
+      },
+      "isDemoData": false
+    },
+    "soilGrids": {
+      "status": "CACHED",
+      "dataset": null,
+      "ph": 6.8,
+      "organicCarbon": null,
+      "texture": null,
+      "depthsSampled": [
+        "0-5cm",
+        "5-15cm",
+        "15-30cm"
+      ],
+      "isDemoData": false
+    },
+    "sentinel2": {
+      "status": "LIVE",
+      "dataset": "Copernicus Sentinel-2 Level-2A (Bottom-of-Atmosphere Reflectance)",
+      "currentNdviIndex": -0.0149,
+      "ndviMedian": -0.0109,
+      "ndviStd": 0.4387,
+      "validPixelCount": 624,
+      "vegetationCondition": "Water Body / Non-Vegetated Surface",
+      "satelliteObservation": {
+        "platform": "Sentinel-2B",
+        "sceneId": "S2B_MSIL2A_20261022T102049_R065_T30NXN_20261022T161659",
+        "observationDate": "2026-10-22T10:20:49.024000Z",
+        "cloudCover": 17.4,
+        "hasRedHref": true,
+        "hasNirHref": true
+      },
+      "rasterProcessingStatus": "LIVE - actual B04/B08 COG pixels sampled. 624 valid pixels used for NDVI computation.",
+      "isDemoData": false
+    },
+    "faostat": {
+      "status": "CACHED",
+      "dataset": "FAOSTAT Crops and Livestock Products (QCL)",
+      "reportingYear": 2022,
+      "statistics": {
+        "cocoa": {
+          "cropName": "Cocoa beans",
+          "productionTonnes": 689000,
+          "areaHarvestedHa": 1820000,
+          "yieldKgPerHa": 378
+        }
+      },
+      "isDemoData": false
+    },
+    "cropCalendar": {
+      "status": "CACHED",
+      "institution": "CSIR - Crops Research Institute (Kumasi) & MoFA Ghana",
+      "calendarAvailable": true,
+      "crops": {
+        "cocoa": {
+          "season": "Main Harvest (Oct-Feb) / Light Crop (May-Aug)",
+          "plantingWindow": "May - June (seedlings establishment)",
+          "floweringPeriod": "April - May & September - October",
+          "harvestingWindow": "October - February (Main crop)",
+          "optimalRainfallMm": "1200 - 1800",
+          "optimalTempC": "21 - 32",
+          "criticalStages": "Cherelle wilt stage and pod development",
+          "source": "Cocoa Research Institute of Ghana (CRIG) Tafo"
+        }
+      }
+    }
+  },
+  "ZA": {
+    "country": "South Africa",
+    "coordinates": [
+      -26.71,
+      27.1
+    ],
+    "nasaPower": {
+      "status": "CACHED",
+      "dataset": null,
+      "summary": {
+        "annualRainfallMm": 339.5,
+        "avgTempC": 19.3,
+        "minTempC": -5.3,
+        "maxTempC": 38.5,
+        "rainyDaysEstimated": 29,
+        "droughtRiskScore": "High",
+        "solarRadiationAvgMj": 19.5
+      },
+      "annualPrecipitationMm": null,
+      "meanTemperatureCelsius": null,
+      "monthsCount": 12,
+      "firstMonthSample": {
+        "month": "Jan",
+        "rainfallMm": 69.8,
+        "tempMeanC": 24.4,
+        "tempMinC": 11.2,
+        "tempMaxC": 35.2,
+        "solarRadiationMj": 24.79
+      },
+      "isDemoData": false
+    },
+    "chirps": {
+      "status": "CACHED",
+      "dataset": "CHIRPS 2.0 (Climate Hazards Center InfraRed Precipitation with Station data)",
+      "totalRainfallMm": 339.4,
+      "anomalyPercentage": -69.7,
+      "seasonalSummary": {
+        "season1": {
+          "name": "Long Rains (MAM - Belg/Kiremt start)",
+          "months": "March - May",
+          "observedMm": 91.2,
+          "baselineMm": 355,
+          "anomalyPercentage": -74.3
+        },
+        "season2": {
+          "name": "Short Rains (OND - Deyr/Meher)",
+          "months": "October - December",
+          "observedMm": 127.2,
+          "baselineMm": 118,
+          "anomalyPercentage": 7.8
+        }
+      },
+      "dataQuality": {
+        "completenessPercentage": 100.0,
+        "missingDaysReported": 0,
+        "missingDataStrategy": "Interpolation against 30-year CHIRPS regional baseline",
+        "spatialResolution": "0.05\u00b0 (~5.3 km CHIRPS grid)",
+        "observationFrequency": "Daily aggregated to monthly"
+      },
+      "isDemoData": false
+    },
+    "soilGrids": {
+      "status": "CACHED",
+      "dataset": null,
+      "ph": 6.8,
+      "organicCarbon": null,
+      "texture": null,
+      "depthsSampled": [
+        "0-5cm",
+        "5-15cm",
+        "15-30cm"
+      ],
+      "isDemoData": false
+    },
+    "sentinel2": {
+      "status": "LIVE",
+      "dataset": "Copernicus Sentinel-2 Level-2A (Bottom-of-Atmosphere Reflectance)",
+      "currentNdviIndex": -0.0101,
+      "ndviMedian": 0.0,
+      "ndviStd": 0.4484,
+      "validPixelCount": 625,
+      "vegetationCondition": "Water Body / Non-Vegetated Surface",
+      "satelliteObservation": {
+        "platform": "Sentinel-2A",
+        "sceneId": "S2A_MSIL2A_20261106T080031_R035_T35JNL_20261106T143708",
+        "observationDate": "2026-11-06T08:00:31.024000Z",
+        "cloudCover": 17.69,
+        "hasRedHref": true,
+        "hasNirHref": true
+      },
+      "rasterProcessingStatus": "LIVE - actual B04/B08 COG pixels sampled. 625 valid pixels used for NDVI computation.",
+      "isDemoData": false
+    },
+    "faostat": {
+      "status": "CACHED",
+      "dataset": "FAOSTAT Crops and Livestock Products (QCL)",
+      "reportingYear": 2022,
+      "statistics": {
+        "maize": {
+          "cropName": "Maize (corn)",
+          "productionTonnes": 16100000,
+          "areaHarvestedHa": 2900000,
+          "yieldKgPerHa": 5551
+        }
+      },
+      "isDemoData": false
+    },
+    "cropCalendar": {
+      "status": "CACHED",
+      "institution": "Agricultural Research Council (ARC) & Department of Agriculture",
+      "calendarAvailable": true,
+      "crops": {
+        "maize": {
+          "season": "Summer Crop (Highveld / Free State)",
+          "plantingWindow": "October 20 - November 30",
+          "floweringPeriod": "January - February",
+          "harvestingWindow": "May - July",
+          "optimalRainfallMm": "500 - 800",
+          "optimalTempC": "18 - 28",
+          "criticalStages": "Pollination and grain filling",
+          "source": "ARC-Grain Crops Institute (Potchefstroom)"
+        }
+      }
+    }
+  }
+}
